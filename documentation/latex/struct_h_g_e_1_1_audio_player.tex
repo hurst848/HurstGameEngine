@@ -1,0 +1,66 @@
+\hypertarget{struct_h_g_e_1_1_audio_player}{}\doxysection{HGE\+::Audio\+Player Struct Reference}
+\label{struct_h_g_e_1_1_audio_player}\index{HGE::AudioPlayer@{HGE::AudioPlayer}}
+
+
+Is a a positional audio player.  
+
+
+
+
+{\ttfamily \#include $<$Audio\+Player.\+h$>$}
+
+Inheritance diagram for HGE\+::Audio\+Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_h_g_e_1_1_audio_player}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_audio_player_a5d651f36bc6939985c9f8b3f98ad507b}\label{struct_h_g_e_1_1_audio_player_a5d651f36bc6939985c9f8b3f98ad507b}} 
+void {\bfseries Set\+Sound\+Clip} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_h_g_e_1_1_sound}{Sound}} $>$ \+\_\+sound)
+\begin{DoxyCompactList}\small\item\em Sets the current sound clip of the audio player, given a \mbox{\hyperlink{struct_h_g_e_1_1_sound}{Sound}} resource (shared\+\_\+ptr$<$\+Sound$>$) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_audio_player_af675b445ca2fede4781f921a1f3e96e2}\label{struct_h_g_e_1_1_audio_player_af675b445ca2fede4781f921a1f3e96e2}} 
+void {\bfseries Play} ()
+\begin{DoxyCompactList}\small\item\em Plays the current \mbox{\hyperlink{struct_h_g_e_1_1_sound}{Sound}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{struct_h_g_e_1_1_audio_player_aa1fded5ca27288bff16f9373f4637d8c}{on\+Create}} ()
+\begin{DoxyCompactList}\small\item\em Vitual function to be implemented by child structures, is called whenever the component is created. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_audio_player_a4de4c6926260be1262f425df15fc9c82}\label{struct_h_g_e_1_1_audio_player_a4de4c6926260be1262f425df15fc9c82}} 
+struct {\bfseries Entity}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Is a a positional audio player. 
+
+The \mbox{\hyperlink{struct_h_g_e_1_1_audio_player}{Audio\+Player}}, is a component used to allow entities to playback audio or sounds within 3D space, for the \mbox{\hyperlink{struct_h_g_e_1_1_audio_listener}{Audio\+Listener}} to hear. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_h_g_e_1_1_audio_player_aa1fded5ca27288bff16f9373f4637d8c}\label{struct_h_g_e_1_1_audio_player_aa1fded5ca27288bff16f9373f4637d8c}} 
+\index{HGE::AudioPlayer@{HGE::AudioPlayer}!onCreate@{onCreate}}
+\index{onCreate@{onCreate}!HGE::AudioPlayer@{HGE::AudioPlayer}}
+\doxysubsubsection{\texorpdfstring{onCreate()}{onCreate()}}
+{\footnotesize\ttfamily void HGE\+::\+Audio\+Player\+::on\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Vitual function to be implemented by child structures, is called whenever the component is created. 
+
+
+
+Reimplemented from \mbox{\hyperlink{struct_h_g_e_1_1_component_a9523851bd2f42c39dded00fbae733c4f}{HGE\+::\+Component}}.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Audio\+Player.\+h\item 
+Audio\+Player.\+cpp\end{DoxyCompactItemize}

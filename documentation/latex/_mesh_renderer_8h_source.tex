@@ -1,0 +1,32 @@
+\hypertarget{_mesh_renderer_8h_source}{}\doxysection{Mesh\+Renderer.\+h}
+\label{_mesh_renderer_8h_source}\index{MeshRenderer.h@{MeshRenderer.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#include "{}Component.h"{}}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{keyword}{namespace }HGE}
+\DoxyCodeLine{6 \{}
+\DoxyCodeLine{7     \textcolor{keyword}{struct }Mesh;}
+\DoxyCodeLine{8     \textcolor{keyword}{struct }ShaderProgram;}
+\DoxyCodeLine{9     \textcolor{keyword}{struct }Texture;}
+\DoxyCodeLine{14     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_mesh_renderer}{MeshRenderer}} : \mbox{\hyperlink{struct_h_g_e_1_1_component}{Component}}}
+\DoxyCodeLine{15     \{}
+\DoxyCodeLine{16     \textcolor{keyword}{public}:}
+\DoxyCodeLine{18         \textcolor{keywordtype}{bool} \mbox{\hyperlink{struct_h_g_e_1_1_mesh_renderer_abb187be27606d98fdab595902d9dd7dc}{Render}};}
+\DoxyCodeLine{20         \textcolor{keywordtype}{bool} \mbox{\hyperlink{struct_h_g_e_1_1_mesh_renderer_a017f3dae3126fc5b7286df9de9dd35d6}{Orthographic}};}
+\DoxyCodeLine{22         \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_mesh_renderer_aa91c850d00c15399894657a81a8b7d28}{SetMesh}}(std::shared\_ptr<Mesh> \_mesh);}
+\DoxyCodeLine{24         \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_mesh_renderer_ae21cdae1e7daf7d5459b03ca0e827978}{SetShader}}(std::shared\_ptr<ShaderProgram> \_program);}
+\DoxyCodeLine{26         \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_mesh_renderer_a01db8efd9510bdb11c3a5d56cfd8f939}{SetTexture}}(std::shared\_ptr<Texture> \_texture);}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28     \textcolor{keyword}{private}:}
+\DoxyCodeLine{29         \textcolor{keywordtype}{void} onRender();}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31         std::shared\_ptr<Mesh> mesh;}
+\DoxyCodeLine{32         std::shared\_ptr<ShaderProgram> program;}
+\DoxyCodeLine{33         std::shared\_ptr<Texture> texture;}
+\DoxyCodeLine{34     \};}
+\DoxyCodeLine{35 \}}
+
+\end{DoxyCode}

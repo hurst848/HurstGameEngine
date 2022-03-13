@@ -1,0 +1,43 @@
+\hypertarget{struct_h_g_e_1_1_shader_program}{}\doxysection{HGE\+::Shader\+Program Struct Reference}
+\label{struct_h_g_e_1_1_shader_program}\index{HGE::ShaderProgram@{HGE::ShaderProgram}}
+
+
+Stores a \mbox{\hyperlink{struct_h_g_e_1_1_shader_program}{Shader\+Program}} used for rendering.  
+
+
+
+
+{\ttfamily \#include $<$Shader.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_shader_program_a2e47dca44fca62f8599680dd32a5b1ac}\label{struct_h_g_e_1_1_shader_program_a2e47dca44fca62f8599680dd32a5b1ac}} 
+void {\bfseries Add\+Shader} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_h_g_e_1_1_shader}{Shader}} $>$ \+\_\+shader)
+\begin{DoxyCompactList}\small\item\em Adds a \mbox{\hyperlink{struct_h_g_e_1_1_shader}{Shader}} \mbox{\hyperlink{struct_h_g_e_1_1_resource}{Resource}} to the \mbox{\hyperlink{struct_h_g_e_1_1_shader_program}{Shader\+Program}} to be compiled, given a shared pointer to a \mbox{\hyperlink{struct_h_g_e_1_1_shader}{Shader}} (shared\+\_\+ptr$<$\+Shader$>$) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_shader_program_a2e465d8a6b937a77e79680c074403c49}\label{struct_h_g_e_1_1_shader_program_a2e465d8a6b937a77e79680c074403c49}} 
+void {\bfseries Compile} ()
+\begin{DoxyCompactList}\small\item\em Comiles all shaders added by the Add\+Shader function to create a \mbox{\hyperlink{struct_h_g_e_1_1_shader_program}{Shader\+Program}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_shader_program_a4eed8bd0148a1cd0070b2898904af725}\label{struct_h_g_e_1_1_shader_program_a4eed8bd0148a1cd0070b2898904af725}} 
+GLuint {\bfseries ID}
+\begin{DoxyCompactList}\small\item\em Stores the \mbox{\hyperlink{struct_h_g_e_1_1_shader_program}{Shader\+Program}} ID for redering. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_shader_program_a9ad0a50c1b74b65aa44a478f9a6b45d6}\label{struct_h_g_e_1_1_shader_program_a9ad0a50c1b74b65aa44a478f9a6b45d6}} 
+struct {\bfseries Mesh\+Renderer}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Stores a \mbox{\hyperlink{struct_h_g_e_1_1_shader_program}{Shader\+Program}} used for rendering. 
+
+The \mbox{\hyperlink{struct_h_g_e_1_1_shader_program}{Shader\+Program}} Structure takes a vertex \mbox{\hyperlink{struct_h_g_e_1_1_shader}{Shader}} and a fragement \mbox{\hyperlink{struct_h_g_e_1_1_shader}{Shader}}, and creates a \mbox{\hyperlink{struct_h_g_e_1_1_shader_program}{Shader\+Program}} for the GPU to render, used by the \mbox{\hyperlink{struct_h_g_e_1_1_mesh_renderer}{Mesh\+Renderer}}. 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Shader.\+h\item 
+Shader.\+cpp\end{DoxyCompactItemize}

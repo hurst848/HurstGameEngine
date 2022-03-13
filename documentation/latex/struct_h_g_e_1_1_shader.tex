@@ -1,0 +1,79 @@
+\hypertarget{struct_h_g_e_1_1_shader}{}\doxysection{HGE\+::Shader Struct Reference}
+\label{struct_h_g_e_1_1_shader}\index{HGE::Shader@{HGE::Shader}}
+
+
+Stores the shader resources.  
+
+
+
+
+{\ttfamily \#include $<$Shader.\+h$>$}
+
+Inheritance diagram for HGE\+::Shader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_h_g_e_1_1_shader}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{struct_h_g_e_1_1_shader_a17971d1a5af7a1cec0bb832690c2d8bf}{Load}} (const std\+::string \&\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Loads a .vert or .frag file, given a file path (const string\&) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_shader_a7d8ec89ffefca7c4247146fd72264bd8}\label{struct_h_g_e_1_1_shader_a7d8ec89ffefca7c4247146fd72264bd8}} 
+{\bfseries $\sim$\+Shader} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{struct_h_g_e_1_1_screen}{Screen}} to destroy the shader code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_shader_a8d827582d889fc327a75b65f585d3763}\label{struct_h_g_e_1_1_shader_a8d827582d889fc327a75b65f585d3763}} 
+GLuint {\bfseries ID}
+\begin{DoxyCompactList}\small\item\em Stores the shader ID for the \mbox{\hyperlink{struct_h_g_e_1_1_shader_program}{Shader\+Program}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_shader_acb1e4caddcca6b4a707b15b913572c7d}\label{struct_h_g_e_1_1_shader_acb1e4caddcca6b4a707b15b913572c7d}} 
+struct {\bfseries Shader\+Program}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Stores the shader resources. 
+
+The \mbox{\hyperlink{struct_h_g_e_1_1_shader}{Shader}} Structure, derived from \mbox{\hyperlink{struct_h_g_e_1_1_resource}{Resource}}, takes a valid .vert or .frag file and parses it for use in the \mbox{\hyperlink{struct_h_g_e_1_1_shader_program}{Shader\+Program}}. Uniform and Attribute flags are also parsed here, details of what each flag is and is correponing varible can be found bellow\+: ~\newline
+fa-\/1 = attribute vec3 a\+\_\+\+Position ~\newline
+fa-\/2 = attribute vec2 a\+\_\+\+Texture\+Coordinates ~\newline
+fa-\/3 = attribute vec3 a\+\_\+\+Normal ~\newline
+fu-\/1 = uniform mat4 u\+\_\+\+Model\+Matrix ~\newline
+fu-\/2 = uniform mat4 u\+\_\+\+Projection\+Matrix ~\newline
+fu-\/3 = uniform mat4 u\+\_\+\+View\+Matrix ~\newline
+fu-\/4 = uniform vec3 u\+\_\+\+Light\+Colour ~\newline
+fu-\/5 = uniform vec3 u\+\_\+\+Light\+Position ~\newline
+fu-\/6 = uniform float u\+\_\+\+Light\+Ambient\+Strength ~\newline
+fu-\/7 = unifrom sampler2D u\+\_\+\+Texture ~\newline
+~\newline
+~\newline
+ Addtionally, the format of the top of each shader file should start with \char`\"{}//$\sim$\char`\"{} and must be space apart with commas. Example shown bellow\+: ~\newline
+\char`\"{}//$\sim$ fu-\/4, fu-\/5, fu-\/6\char`\"{} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_h_g_e_1_1_shader_a17971d1a5af7a1cec0bb832690c2d8bf}\label{struct_h_g_e_1_1_shader_a17971d1a5af7a1cec0bb832690c2d8bf}} 
+\index{HGE::Shader@{HGE::Shader}!Load@{Load}}
+\index{Load@{Load}!HGE::Shader@{HGE::Shader}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily void HGE\+::\+Shader\+::\+Load (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Loads a .vert or .frag file, given a file path (const string\&) 
+
+
+
+Reimplemented from \mbox{\hyperlink{struct_h_g_e_1_1_resource}{HGE\+::\+Resource}}.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Shader.\+h\item 
+Shader.\+cpp\end{DoxyCompactItemize}

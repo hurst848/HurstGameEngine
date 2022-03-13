@@ -1,0 +1,86 @@
+\hypertarget{_assets_8h_source}{}\doxysection{Assets.\+h}
+\label{_assets_8h_source}\index{Assets.h@{Assets.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#include "{}Resource.h"{}}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{namespace }HGE }
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11     \textcolor{keyword}{struct }MeshBuilder;}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{22     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_assets}{Assets}}}
+\DoxyCodeLine{23     \{}
+\DoxyCodeLine{24     \textcolor{keyword}{public}:}
+\DoxyCodeLine{26         std::shared\_ptr<Assets> \mbox{\hyperlink{struct_h_g_e_1_1_assets_a8cfa4d8d26c5d7547e4f359e4c840c22}{Initialize}}();}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{29         \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{30         std::shared\_ptr<T> \mbox{\hyperlink{struct_h_g_e_1_1_assets_ae2df53ee49da265357d0a0fcea1cd135}{GetResource}}(std::string \_name)}
+\DoxyCodeLine{31         \{}
+\DoxyCodeLine{32             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < resources.size(); i++)}
+\DoxyCodeLine{33             \{}
+\DoxyCodeLine{34                 \textcolor{keywordflow}{if} (resources.at(i)-\/>Name == \_name)}
+\DoxyCodeLine{35                 \{}
+\DoxyCodeLine{36                     \textcolor{keywordflow}{return} resources.at(i);}
+\DoxyCodeLine{37                 \}}
+\DoxyCodeLine{38             \}}
+\DoxyCodeLine{39             \textcolor{keywordflow}{return} NULL;}
+\DoxyCodeLine{40         \}}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{43         \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{44         std::shared\_ptr<T> \mbox{\hyperlink{struct_h_g_e_1_1_assets_ac0186005b67e09040341aef63ac09e1d}{GetResource}}()}
+\DoxyCodeLine{45         \{}
+\DoxyCodeLine{46             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < resources.size(); i++)}
+\DoxyCodeLine{47             \{}
+\DoxyCodeLine{48                 std::shared\_ptr<T> rtrn = std::dynamic\_pointer\_cast<T>(resources.at(i));}
+\DoxyCodeLine{49                 \textcolor{keywordflow}{if} (rtrn)}
+\DoxyCodeLine{50                 \{}
+\DoxyCodeLine{51                     \textcolor{keywordflow}{return} rtrn;}
+\DoxyCodeLine{52                 \}}
+\DoxyCodeLine{53             \}}
+\DoxyCodeLine{54         \}}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{57         \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{58         std::shared\_ptr<T> \mbox{\hyperlink{struct_h_g_e_1_1_assets_ac6846988158ef8ebae82f589af65c455}{AddResource}}()}
+\DoxyCodeLine{59         \{}
+\DoxyCodeLine{60             std::shared\_ptr<T> resource = std::make\_shared<T>();}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62             resources.push\_back(resource);}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64             \textcolor{keywordflow}{return} resource;}
+\DoxyCodeLine{65         \}}
+\DoxyCodeLine{66         }
+\DoxyCodeLine{68         \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{69         std::shared\_ptr<T> \mbox{\hyperlink{struct_h_g_e_1_1_assets_ac805edb5051e68f6c4762f99a3c47e65}{AddResource}}(std::shared\_ptr<T> \_resource)}
+\DoxyCodeLine{70         \{}
+\DoxyCodeLine{71             std::shared\_ptr<T> resource = \_resource;}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73             resources.push\_back(resource);}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75             \textcolor{keywordflow}{return} resource;}
+\DoxyCodeLine{76         \}}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{79         \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{80         std::shared\_ptr<T> \mbox{\hyperlink{struct_h_g_e_1_1_assets_a2928b8b30d8789c8f018c9b2c0591200}{AddResource}}(std::string \_path)}
+\DoxyCodeLine{81         \{}
+\DoxyCodeLine{82             std::shared\_ptr<T> resource = std::make\_shared<T>();}
+\DoxyCodeLine{83             resource-\/>Load(\_path);}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85             resources.push\_back(resource);}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87             \textcolor{keywordflow}{return} resource;}
+\DoxyCodeLine{88         \}}
+\DoxyCodeLine{90         std::weak\_ptr<Assets> \mbox{\hyperlink{struct_h_g_e_1_1_assets_a1b52ac8a91e8b5f856acf3ccc3d63304}{Self}};}
+\DoxyCodeLine{92         std::shared\_ptr<MeshBuilder> \mbox{\hyperlink{struct_h_g_e_1_1_assets_a479f528385dc64a1b00ded36f85cf1ad}{Meshbuilder}};}
+\DoxyCodeLine{93     \textcolor{keyword}{private}:}
+\DoxyCodeLine{94         std::vector<std::shared\_ptr<Resource>> resources;}
+\DoxyCodeLine{95     \};}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97 \}}
+
+\end{DoxyCode}

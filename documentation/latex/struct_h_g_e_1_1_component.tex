@@ -1,0 +1,84 @@
+\hypertarget{struct_h_g_e_1_1_component}{}\doxysection{HGE\+::Component Struct Reference}
+\label{struct_h_g_e_1_1_component}\index{HGE::Component@{HGE::Component}}
+
+
+Is the parent Structure to all Components, and user made functionallity.  
+
+
+
+
+{\ttfamily \#include $<$Component.\+h$>$}
+
+Inheritance diagram for HGE\+::Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.751825cm]{struct_h_g_e_1_1_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_component_af0d051bac322231096a6c0167fc78966}\label{struct_h_g_e_1_1_component_af0d051bac322231096a6c0167fc78966}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_h_g_e_1_1_core}{Core}} $>$ {\bfseries Get\+Core} ()
+\begin{DoxyCompactList}\small\item\em Returns a shared pointer to the game engine \mbox{\hyperlink{struct_h_g_e_1_1_core}{Core}} (shared\+\_\+ptr$<$\+Core$>$) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_component_a8078ff427913d9f400bdcfa7239d6ab7}\label{struct_h_g_e_1_1_component_a8078ff427913d9f400bdcfa7239d6ab7}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_h_g_e_1_1_entity}{Entity}} $>$ {\bfseries Get\+Entity} ()
+\begin{DoxyCompactList}\small\item\em Returns a shared pointer to the component\textquotesingle{}s \mbox{\hyperlink{struct_h_g_e_1_1_entity}{Entity}} (shared\+\_\+ptr$<$\+Entity$>$) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_component_ab961b2ff15628192878e60d88e12a824}\label{struct_h_g_e_1_1_component_ab961b2ff15628192878e60d88e12a824}} 
+std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{struct_h_g_e_1_1_component}{Component}} $>$ {\bfseries Self}
+\begin{DoxyCompactList}\small\item\em Stores a weak pointer to itself (weak\+\_\+ptr$<$\+Component$>$) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{struct_h_g_e_1_1_component_a9523851bd2f42c39dded00fbae733c4f}{on\+Create}} ()
+\begin{DoxyCompactList}\small\item\em Vitual function to be implemented by child structures, is called whenever the component is created. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_component_a17bc382f26d7000aeda7beed2293db5b}\label{struct_h_g_e_1_1_component_a17bc382f26d7000aeda7beed2293db5b}} 
+virtual void {\bfseries on\+Start} ()
+\begin{DoxyCompactList}\small\item\em Vitual function to be implemented by child structures, is called whenever the \mbox{\hyperlink{struct_h_g_e_1_1_core}{Core}} is started ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_component_a885bb26084d7cd3e82f1630cc9d4786c}\label{struct_h_g_e_1_1_component_a885bb26084d7cd3e82f1630cc9d4786c}} 
+virtual void {\bfseries on\+Update} ()
+\begin{DoxyCompactList}\small\item\em Vitual function to be implemented by child structures, is called every update of the \mbox{\hyperlink{struct_h_g_e_1_1_core}{Core}} and \mbox{\hyperlink{struct_h_g_e_1_1_entity}{Entity}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_component_adeada956be4c0a428f381e4d75ea4bb1}\label{struct_h_g_e_1_1_component_adeada956be4c0a428f381e4d75ea4bb1}} 
+virtual void {\bfseries on\+Render} ()
+\begin{DoxyCompactList}\small\item\em Vitual function to be implemented by child structures, is called every update of the \mbox{\hyperlink{struct_h_g_e_1_1_core}{Core}} and \mbox{\hyperlink{struct_h_g_e_1_1_entity}{Entity}} after \mbox{\hyperlink{struct_h_g_e_1_1_component_a885bb26084d7cd3e82f1630cc9d4786c}{on\+Update()}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_component_a13c24dfecda438f5526ec6fcd8de6b26}\label{struct_h_g_e_1_1_component_a13c24dfecda438f5526ec6fcd8de6b26}} 
+virtual void {\bfseries on\+Post\+Render} ()
+\begin{DoxyCompactList}\small\item\em Vitual function to be implemented by child structures, is called every update of the \mbox{\hyperlink{struct_h_g_e_1_1_core}{Core}} and \mbox{\hyperlink{struct_h_g_e_1_1_entity}{Entity}} after \mbox{\hyperlink{struct_h_g_e_1_1_component_adeada956be4c0a428f381e4d75ea4bb1}{on\+Render()}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_component_a4de4c6926260be1262f425df15fc9c82}\label{struct_h_g_e_1_1_component_a4de4c6926260be1262f425df15fc9c82}} 
+struct {\bfseries Entity}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Is the parent Structure to all Components, and user made functionallity. 
+
+The \mbox{\hyperlink{struct_h_g_e_1_1_component}{Component}} Structure is where the majority of the logic in the game engine is derived. Users can make their own components by inheriting from it. Are stored in a vector held within their respective \mbox{\hyperlink{struct_h_g_e_1_1_entity}{Entity}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_h_g_e_1_1_component_a9523851bd2f42c39dded00fbae733c4f}\label{struct_h_g_e_1_1_component_a9523851bd2f42c39dded00fbae733c4f}} 
+\index{HGE::Component@{HGE::Component}!onCreate@{onCreate}}
+\index{onCreate@{onCreate}!HGE::Component@{HGE::Component}}
+\doxysubsubsection{\texorpdfstring{onCreate()}{onCreate()}}
+{\footnotesize\ttfamily virtual void HGE\+::\+Component\+::on\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Vitual function to be implemented by child structures, is called whenever the component is created. 
+
+
+
+Reimplemented in \mbox{\hyperlink{struct_h_g_e_1_1_audio_listener_a9253275038300a34d36d5665f7716fd1}{HGE\+::\+Audio\+Listener}}, \mbox{\hyperlink{struct_h_g_e_1_1_audio_player_aa1fded5ca27288bff16f9373f4637d8c}{HGE\+::\+Audio\+Player}}, and \mbox{\hyperlink{struct_h_g_e_1_1_collider_a873d5d38e44ef11eac8f0ee83e3dc4bb}{HGE\+::\+Collider}}.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Component.\+h\item 
+Component.\+cpp\end{DoxyCompactItemize}

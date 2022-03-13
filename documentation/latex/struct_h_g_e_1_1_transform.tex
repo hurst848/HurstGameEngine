@@ -1,0 +1,71 @@
+\hypertarget{struct_h_g_e_1_1_transform}{}\doxysection{HGE\+::Transform Struct Reference}
+\label{struct_h_g_e_1_1_transform}\index{HGE::Transform@{HGE::Transform}}
+
+
+Stores all transformational data.  
+
+
+
+
+{\ttfamily \#include $<$Transform.\+h$>$}
+
+Inheritance diagram for HGE\+::Transform\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_h_g_e_1_1_transform}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_transform_a06a172820048e5501863a1d2a02fe645}\label{struct_h_g_e_1_1_transform_a06a172820048e5501863a1d2a02fe645}} 
+{\bfseries Transform} ()
+\begin{DoxyCompactList}\small\item\em Base constructor for \mbox{\hyperlink{struct_h_g_e_1_1_transform}{Transform}}, defaults position and rotation to vec3(0) and scale to vec3(1) (\mbox{\hyperlink{struct_h_g_e_1_1_transform}{Transform}}) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_transform_a0ffc95414f89585ad35f41ed58dad30f}\label{struct_h_g_e_1_1_transform_a0ffc95414f89585ad35f41ed58dad30f}} 
+mat4 {\bfseries Get\+Model\+Matrix} ()
+\begin{DoxyCompactList}\small\item\em Calculates and returns the a model matrix used in the \mbox{\hyperlink{struct_h_g_e_1_1_shader_program}{Shader\+Program}} (mat4) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_transform_a74a5625690f2787c139281d826baefff}\label{struct_h_g_e_1_1_transform_a74a5625690f2787c139281d826baefff}} 
+void {\bfseries Set\+Parent} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_h_g_e_1_1_transform}{Transform}} $>$ \+\_\+parent)
+\begin{DoxyCompactList}\small\item\em Sets the parent Transfom of this Transrom, give a shared pointer to a \mbox{\hyperlink{struct_h_g_e_1_1_transform}{Transform}} (shared\+\_\+ptr$<$\+Transform$>$) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_transform_a45524dbe46dca796f2e9d03f011d53df}\label{struct_h_g_e_1_1_transform_a45524dbe46dca796f2e9d03f011d53df}} 
+vec3 {\bfseries Get\+Position} ()
+\begin{DoxyCompactList}\small\item\em Return the current position of the \mbox{\hyperlink{struct_h_g_e_1_1_transform}{Transform}} (vec3) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_transform_a079506c7db1f8343e7655f3a0ff26454}\label{struct_h_g_e_1_1_transform_a079506c7db1f8343e7655f3a0ff26454}} 
+vec3 {\bfseries Get\+Rotation} ()
+\begin{DoxyCompactList}\small\item\em Return the current rotation of the \mbox{\hyperlink{struct_h_g_e_1_1_transform}{Transform}} (vec3) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_transform_ad75b9dcbc34951e74761049e38f90d5e}\label{struct_h_g_e_1_1_transform_ad75b9dcbc34951e74761049e38f90d5e}} 
+vec3 {\bfseries Get\+Scale} ()
+\begin{DoxyCompactList}\small\item\em Return the current scale of the \mbox{\hyperlink{struct_h_g_e_1_1_transform}{Transform}} (vec3) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_transform_a16d2a2e27c72004d9156ccc980445749}\label{struct_h_g_e_1_1_transform_a16d2a2e27c72004d9156ccc980445749}} 
+vec3 {\bfseries Get\+Forward} ()
+\begin{DoxyCompactList}\small\item\em Return the current forward vector of the \mbox{\hyperlink{struct_h_g_e_1_1_transform}{Transform}} (vec3) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_transform_ad45c5fc1f37e21cb60f3b6281f5585a9}\label{struct_h_g_e_1_1_transform_ad45c5fc1f37e21cb60f3b6281f5585a9}} 
+void {\bfseries Set\+Position} (float \+\_\+x, float \+\_\+y, float \+\_\+z)
+\begin{DoxyCompactList}\small\item\em Sets the position of the \mbox{\hyperlink{struct_h_g_e_1_1_transform}{Transform}}, given an x, y and z value (float) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_transform_a72a90e178ff8c8a0aebfac01f41a0e5f}\label{struct_h_g_e_1_1_transform_a72a90e178ff8c8a0aebfac01f41a0e5f}} 
+void {\bfseries Set\+Position} (vec3 \+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Sets the position of the \mbox{\hyperlink{struct_h_g_e_1_1_transform}{Transform}}, given an vector (vec3) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_transform_a3e65e8cae04ffe8623475fe67e466190}\label{struct_h_g_e_1_1_transform_a3e65e8cae04ffe8623475fe67e466190}} 
+void {\bfseries Set\+Rotation} (float \+\_\+x, float \+\_\+y, float \+\_\+z)
+\begin{DoxyCompactList}\small\item\em Sets the rotation of the \mbox{\hyperlink{struct_h_g_e_1_1_transform}{Transform}}, given an x, y and z value (float) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_transform_a240d2bc527d8db77d713eb61f75e718a}\label{struct_h_g_e_1_1_transform_a240d2bc527d8db77d713eb61f75e718a}} 
+void {\bfseries Set\+Rotation} (vec3 \+\_\+rot)
+\begin{DoxyCompactList}\small\item\em Sets the rotation of the \mbox{\hyperlink{struct_h_g_e_1_1_transform}{Transform}}, given an vector (vec3) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_transform_a13186c68c7809e20e9e1d92561ac8e08}\label{struct_h_g_e_1_1_transform_a13186c68c7809e20e9e1d92561ac8e08}} 
+void {\bfseries Set\+Scale} (float \+\_\+x, float \+\_\+y, float \+\_\+z)
+\begin{DoxyCompactList}\small\item\em Sets the scale of the \mbox{\hyperlink{struct_h_g_e_1_1_transform}{Transform}}, given an x, y and z value (float) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_transform_a699d2bfab7bbe048fb06b63bdf17042d}\label{struct_h_g_e_1_1_transform_a699d2bfab7bbe048fb06b63bdf17042d}} 
+void {\bfseries Set\+Scale} (vec3 \+\_\+scl)
+\begin{DoxyCompactList}\small\item\em Sets the scale of the \mbox{\hyperlink{struct_h_g_e_1_1_transform}{Transform}}, given an vector (vec3) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Stores all transformational data. 
+
+The \mbox{\hyperlink{struct_h_g_e_1_1_transform}{Transform}} Structure is a component used to store all positional, rotational and scaling data. Is also where the model matrix is generated. Every created \mbox{\hyperlink{struct_h_g_e_1_1_entity}{Entity}} structure is created with a \mbox{\hyperlink{struct_h_g_e_1_1_transform}{Transform}} by default, unless manually removed 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Transform.\+h\item 
+Transform.\+cpp\end{DoxyCompactItemize}

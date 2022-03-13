@@ -1,0 +1,34 @@
+\hypertarget{_audio_listener_8h_source}{}\doxysection{Audio\+Listener.\+h}
+\label{_audio_listener_8h_source}\index{AudioListener.h@{AudioListener.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#include "{}Component.h"{}}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{namespace }HGE}
+\DoxyCodeLine{7 \{}
+\DoxyCodeLine{8     \textcolor{keyword}{struct }Transform;}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{16     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_audio_listener}{AudioListener}} : \mbox{\hyperlink{struct_h_g_e_1_1_component}{Component}}}
+\DoxyCodeLine{17     \{}
+\DoxyCodeLine{18         \textcolor{keyword}{friend} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_entity}{Entity}};}
+\DoxyCodeLine{19         \textcolor{keyword}{friend} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_audio_player}{AudioPlayer}};}
+\DoxyCodeLine{20     \textcolor{keyword}{public}:}
+\DoxyCodeLine{22         \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_audio_listener_ac9be610ea9db4ee52ff11fda6f052521}{SetActiveListner}}();}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{25         \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_audio_listener_abeaab60e8c43c400cf1eceb0583928d3}{SetSelf}}(std::shared\_ptr<AudioListener> \_self);}
+\DoxyCodeLine{26     \textcolor{keyword}{private}:}
+\DoxyCodeLine{27         std::weak\_ptr<AudioListener> as;}
+\DoxyCodeLine{28         std::weak\_ptr<Transform> transform;}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30     \textcolor{keyword}{protected}:}
+\DoxyCodeLine{31         \textcolor{comment}{// Called when created, binds the refences of transform}}
+\DoxyCodeLine{32         \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_audio_listener_a9253275038300a34d36d5665f7716fd1}{onCreate}}();}
+\DoxyCodeLine{33     }
+\DoxyCodeLine{34     \};}
+\DoxyCodeLine{35 \}}
+\DoxyCodeLine{36 }
+
+\end{DoxyCode}

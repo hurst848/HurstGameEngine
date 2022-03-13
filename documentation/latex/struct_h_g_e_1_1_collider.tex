@@ -1,0 +1,92 @@
+\hypertarget{struct_h_g_e_1_1_collider}{}\doxysection{HGE\+::Collider Struct Reference}
+\label{struct_h_g_e_1_1_collider}\index{HGE::Collider@{HGE::Collider}}
+
+
+Is the Parent Structure to the Colliders.  
+
+
+
+
+{\ttfamily \#include $<$Collider.\+h$>$}
+
+Inheritance diagram for HGE\+::Collider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{struct_h_g_e_1_1_collider}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_collider_ad800e9ce9c9c075845fd7099c95f81a0}\label{struct_h_g_e_1_1_collider_ad800e9ce9c9c075845fd7099c95f81a0}} 
+bool {\bfseries Is\+Colliding} ()
+\begin{DoxyCompactList}\small\item\em Returns true (bool) if the current collider is actually colliding. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_collider_a4de915d06d243ce45c9ea63551bed929}\label{struct_h_g_e_1_1_collider_a4de915d06d243ce45c9ea63551bed929}} 
+std\+::vector$<$ \mbox{\hyperlink{struct_h_g_e_1_1_collision_event}{Collision\+Event}} $>$ {\bfseries Get\+All\+Rigidbody\+Collisions} ()
+\begin{DoxyCompactList}\small\item\em Returns a vector of collision enents (vector$<$\+Collision\+Event$>$) that can interact with rigidbodies. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_collider_afa4fd57cebc271007fed6bf7c7e5d061}\label{struct_h_g_e_1_1_collider_afa4fd57cebc271007fed6bf7c7e5d061}} 
+std\+::vector$<$ \mbox{\hyperlink{struct_h_g_e_1_1_collision_event}{Collision\+Event}} $>$ {\bfseries Get\+All\+Collisions} ()
+\begin{DoxyCompactList}\small\item\em Returns a vector of collision events (vector$<$\+Collision\+Event$>$) if and collision events are registered. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_collider_a1486459fb99b2829b3691360d02f31a0}\label{struct_h_g_e_1_1_collider_a1486459fb99b2829b3691360d02f31a0}} 
+std\+::string {\bfseries Tag}
+\begin{DoxyCompactList}\small\item\em Stores a tag (string) for differentiation between all of the colliders. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_collider_ab6a4579ab3c0b16a96b4041bc9be2136}\label{struct_h_g_e_1_1_collider_ab6a4579ab3c0b16a96b4041bc9be2136}} 
+bool {\bfseries Can\+Interact\+With\+Rigidbodies}
+\begin{DoxyCompactList}\small\item\em Stores whether or not the collider can interact with rigidbodies. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_collider_a2d0d1b732d69e75f9430698a9607a9e7}\label{struct_h_g_e_1_1_collider_a2d0d1b732d69e75f9430698a9607a9e7}} 
+virtual \mbox{\hyperlink{struct_h_g_e_1_1_collision_event}{Collision\+Event}} {\bfseries check\+Collision\+With\+Sphere} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_h_g_e_1_1_sphere_collider}{Sphere\+Collider}} $>$ \+\_\+collider)
+\begin{DoxyCompactList}\small\item\em A virtual function return a collision event (\mbox{\hyperlink{struct_h_g_e_1_1_collision_event}{Collision\+Event}}) to be implemented by the child strucures \mbox{\hyperlink{struct_h_g_e_1_1_box_collider}{Box\+Collider}} and Sphere\+Colloder, given a shared pointer to a collider (shared\+\_\+ptr$<$\+Collider$>$) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_collider_a11fd087d976c3b5ea2b8adfa33776117}\label{struct_h_g_e_1_1_collider_a11fd087d976c3b5ea2b8adfa33776117}} 
+virtual \mbox{\hyperlink{struct_h_g_e_1_1_collision_event}{Collision\+Event}} {\bfseries check\+Collision\+With\+Box} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_h_g_e_1_1_box_collider}{Box\+Collider}} $>$ \+\_\+collider)
+\begin{DoxyCompactList}\small\item\em A virtual function return a collision event (\mbox{\hyperlink{struct_h_g_e_1_1_collision_event}{Collision\+Event}}) to be implemented by the child strucures \mbox{\hyperlink{struct_h_g_e_1_1_box_collider}{Box\+Collider}} and Sphere\+Colloder, given a shared pointer to a collider (shared\+\_\+ptr$<$\+Collider$>$) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_h_g_e_1_1_collider_a873d5d38e44ef11eac8f0ee83e3dc4bb}{on\+Create}} ()
+\begin{DoxyCompactList}\small\item\em Inherited from the \mbox{\hyperlink{struct_h_g_e_1_1_component}{Component}} structure, used upon creation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_collider_a4952e83b863f263c4cae0762fd2cec9e}\label{struct_h_g_e_1_1_collider_a4952e83b863f263c4cae0762fd2cec9e}} 
+std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{struct_h_g_e_1_1_transform}{Transform}} $>$ {\bfseries transform}
+\begin{DoxyCompactList}\small\item\em A weak pointer to the collier\textquotesingle{}s entity\textquotesingle{}s transfrom (weak\+\_\+ptr$<$\+Transform$>$) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_collider_aab2cff4e39e6c005368bb4eb0a273fe9}\label{struct_h_g_e_1_1_collider_aab2cff4e39e6c005368bb4eb0a273fe9}} 
+std\+::vector$<$ \mbox{\hyperlink{struct_h_g_e_1_1_collision_event}{Collision\+Event}} $>$ {\bfseries current\+Colliders}
+\begin{DoxyCompactList}\small\item\em A vector containing all current collision Events (vector$<$\+Collision\+Event$>$) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_collider_a3481a65d71dcbadf7db46fa0451e4f13}\label{struct_h_g_e_1_1_collider_a3481a65d71dcbadf7db46fa0451e4f13}} 
+struct {\bfseries Physics\+Engine}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Is the Parent Structure to the Colliders. 
+
+The \mbox{\hyperlink{struct_h_g_e_1_1_collider}{Collider}} structure is the parent strucure to both the \mbox{\hyperlink{struct_h_g_e_1_1_box_collider}{Box\+Collider}} and the \mbox{\hyperlink{struct_h_g_e_1_1_sphere_collider}{Sphere\+Collider}}. Additonally it stores data used by both. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_h_g_e_1_1_collider_a873d5d38e44ef11eac8f0ee83e3dc4bb}\label{struct_h_g_e_1_1_collider_a873d5d38e44ef11eac8f0ee83e3dc4bb}} 
+\index{HGE::Collider@{HGE::Collider}!onCreate@{onCreate}}
+\index{onCreate@{onCreate}!HGE::Collider@{HGE::Collider}}
+\doxysubsubsection{\texorpdfstring{onCreate()}{onCreate()}}
+{\footnotesize\ttfamily void HGE\+::\+Collider\+::on\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Inherited from the \mbox{\hyperlink{struct_h_g_e_1_1_component}{Component}} structure, used upon creation. 
+
+
+
+Reimplemented from \mbox{\hyperlink{struct_h_g_e_1_1_component_a9523851bd2f42c39dded00fbae733c4f}{HGE\+::\+Component}}.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Collider.\+h\item 
+Collider.\+cpp\end{DoxyCompactItemize}

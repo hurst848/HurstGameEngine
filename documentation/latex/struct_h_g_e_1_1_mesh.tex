@@ -1,0 +1,65 @@
+\hypertarget{struct_h_g_e_1_1_mesh}{}\doxysection{HGE\+::Mesh Struct Reference}
+\label{struct_h_g_e_1_1_mesh}\index{HGE::Mesh@{HGE::Mesh}}
+
+
+Stores Vertex Array objects that have mesh data.  
+
+
+
+
+{\ttfamily \#include $<$Mesh.\+h$>$}
+
+Inheritance diagram for HGE\+::Mesh\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_h_g_e_1_1_mesh}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{struct_h_g_e_1_1_mesh_abaca40646d345a041ea0419038dede42}{Load}} (const std\+::string \&\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Loads a .obj file, given a file path (const string\&) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_mesh_a11655a7ca544706fe730b75ab84ec4b7}\label{struct_h_g_e_1_1_mesh_a11655a7ca544706fe730b75ab84ec4b7}} 
+GLuint {\bfseries ID}
+\begin{DoxyCompactList}\small\item\em Stores the vertex array object ID for rendering. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_mesh_a599add23240ba9a401e2e859d8628512}\label{struct_h_g_e_1_1_mesh_a599add23240ba9a401e2e859d8628512}} 
+size\+\_\+t {\bfseries Vertex\+Count}
+\begin{DoxyCompactList}\small\item\em Stores the vertex count of the loaded mesh. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_mesh_a25131deaa88fe7bacbe4526a80f80248}\label{struct_h_g_e_1_1_mesh_a25131deaa88fe7bacbe4526a80f80248}} 
+struct {\bfseries Mesh\+Builder}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Stores Vertex Array objects that have mesh data. 
+
+The \mbox{\hyperlink{struct_h_g_e_1_1_mesh}{Mesh}} Structure, derived from \mbox{\hyperlink{struct_h_g_e_1_1_resource}{Resource}}, creates and stores a Open\+GL vertex array object, to allow for rendering of the mesh file. Only .obj files are currently accepted. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_h_g_e_1_1_mesh_abaca40646d345a041ea0419038dede42}\label{struct_h_g_e_1_1_mesh_abaca40646d345a041ea0419038dede42}} 
+\index{HGE::Mesh@{HGE::Mesh}!Load@{Load}}
+\index{Load@{Load}!HGE::Mesh@{HGE::Mesh}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily void HGE\+::\+Mesh\+::\+Load (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Loads a .obj file, given a file path (const string\&) 
+
+
+
+Reimplemented from \mbox{\hyperlink{struct_h_g_e_1_1_resource}{HGE\+::\+Resource}}.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Mesh.\+h\item 
+Mesh.\+cpp\end{DoxyCompactItemize}

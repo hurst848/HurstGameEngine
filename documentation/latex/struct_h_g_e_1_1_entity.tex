@@ -1,0 +1,52 @@
+\hypertarget{struct_h_g_e_1_1_entity}{}\doxysection{HGE\+::Entity Struct Reference}
+\label{struct_h_g_e_1_1_entity}\index{HGE::Entity@{HGE::Entity}}
+
+
+Is a strucure that stores all components.  
+
+
+
+
+{\ttfamily \#include $<$Entity.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_entity_aa162f50ddce9bcf0c3857a937bf75f79}\label{struct_h_g_e_1_1_entity_aa162f50ddce9bcf0c3857a937bf75f79}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_h_g_e_1_1_core}{Core}} $>$ {\bfseries Get\+Core} ()
+\begin{DoxyCompactList}\small\item\em Returns a shared pointer to the game engine \mbox{\hyperlink{struct_h_g_e_1_1_core}{Core}} (shared\+\_\+ptr$<$\+Core$>$) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_entity_a704bb5bf1ea1538fae0467ca41392229}\label{struct_h_g_e_1_1_entity_a704bb5bf1ea1538fae0467ca41392229}} 
+{\footnotesize template$<$typename T $>$ }\\std\+::shared\+\_\+ptr$<$ T $>$ {\bfseries Add\+Component} ()
+\begin{DoxyCompactList}\small\item\em Template funtion to add a new component to the \mbox{\hyperlink{struct_h_g_e_1_1_entity}{Entity}} and return the added component (shared\+\_\+ptr$<$\+T$>$), given the component type (T) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_entity_a9b9b727e419d00a8e759eab55e95cb69}\label{struct_h_g_e_1_1_entity_a9b9b727e419d00a8e759eab55e95cb69}} 
+{\footnotesize template$<$typename T $>$ }\\std\+::shared\+\_\+ptr$<$ T $>$ {\bfseries Get\+Component} ()
+\begin{DoxyCompactList}\small\item\em Template funtion to add a return a component (shared\+\_\+ptr$<$\+T$>$), given the component type (T) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_entity_a9efb9b07f9f606303723ccbac0a4a182}\label{struct_h_g_e_1_1_entity_a9efb9b07f9f606303723ccbac0a4a182}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_h_g_e_1_1_transform}{Transform}} $>$ {\bfseries Get\+Transform} ()
+\begin{DoxyCompactList}\small\item\em Returns the transform component (shared\+\_\+ptr$<$\+Transform$>$) attached to this \mbox{\hyperlink{struct_h_g_e_1_1_entity}{Entity}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_entity_aa0e34ecc19c19743420eaa79ec962682}\label{struct_h_g_e_1_1_entity_aa0e34ecc19c19743420eaa79ec962682}} 
+void {\bfseries Mark\+For\+Deletion} ()
+\begin{DoxyCompactList}\small\item\em Marks the entity for deletion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_entity_ad89b7b092f25e45fa4a1eca9b5ec79fc}\label{struct_h_g_e_1_1_entity_ad89b7b092f25e45fa4a1eca9b5ec79fc}} 
+std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{struct_h_g_e_1_1_entity}{Entity}} $>$ {\bfseries Self}
+\begin{DoxyCompactList}\small\item\em Weak pointer pointing to Self (weak\+\_\+ptr$<$\+Assets$>$) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_entity_acd0789873af2006e142a579250891ce8}\label{struct_h_g_e_1_1_entity_acd0789873af2006e142a579250891ce8}} 
+struct {\bfseries Core}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Is a strucure that stores all components. 
+
+The \mbox{\hyperlink{struct_h_g_e_1_1_entity}{Entity}} Structure acts as a \textquotesingle{}Game\+Object\textquotesingle{}, and is a object within the game space. Functionally, it stores all of the components and data to allow for programibility 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Entity.\+h\item 
+Entity.\+cpp\end{DoxyCompactItemize}

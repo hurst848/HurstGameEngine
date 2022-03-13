@@ -1,0 +1,56 @@
+\hypertarget{struct_h_g_e_1_1_assets}{}\doxysection{HGE\+::Assets Struct Reference}
+\label{struct_h_g_e_1_1_assets}\index{HGE::Assets@{HGE::Assets}}
+
+
+Holds all the resources used in the project.  
+
+
+
+
+{\ttfamily \#include $<$Assets.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_assets_a8cfa4d8d26c5d7547e4f359e4c840c22}\label{struct_h_g_e_1_1_assets_a8cfa4d8d26c5d7547e4f359e4c840c22}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_h_g_e_1_1_assets}{Assets}} $>$ {\bfseries Initialize} ()
+\begin{DoxyCompactList}\small\item\em Initializes the \mbox{\hyperlink{struct_h_g_e_1_1_assets}{Assets}} Structure. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_assets_ae2df53ee49da265357d0a0fcea1cd135}\label{struct_h_g_e_1_1_assets_ae2df53ee49da265357d0a0fcea1cd135}} 
+{\footnotesize template$<$typename T $>$ }\\std\+::shared\+\_\+ptr$<$ T $>$ {\bfseries Get\+Resource} (std\+::string \+\_\+name)
+\begin{DoxyCompactList}\small\item\em Templace Function to retrive a resource, given a type (T) and an assigned name (string) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_assets_ac0186005b67e09040341aef63ac09e1d}\label{struct_h_g_e_1_1_assets_ac0186005b67e09040341aef63ac09e1d}} 
+{\footnotesize template$<$typename T $>$ }\\std\+::shared\+\_\+ptr$<$ T $>$ {\bfseries Get\+Resource} ()
+\begin{DoxyCompactList}\small\item\em Template Funtion to retrive a resource, given the resource type (T) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_assets_ac6846988158ef8ebae82f589af65c455}\label{struct_h_g_e_1_1_assets_ac6846988158ef8ebae82f589af65c455}} 
+{\footnotesize template$<$typename T $>$ }\\std\+::shared\+\_\+ptr$<$ T $>$ {\bfseries Add\+Resource} ()
+\begin{DoxyCompactList}\small\item\em Template Function to add a new empty resource, given the resource type (T) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_assets_ac805edb5051e68f6c4762f99a3c47e65}\label{struct_h_g_e_1_1_assets_ac805edb5051e68f6c4762f99a3c47e65}} 
+{\footnotesize template$<$typename T $>$ }\\std\+::shared\+\_\+ptr$<$ T $>$ {\bfseries Add\+Resource} (std\+::shared\+\_\+ptr$<$ T $>$ \+\_\+resource)
+\begin{DoxyCompactList}\small\item\em Template Function to add a new empty resource, given the resource type (T) and a shared pointer to a pre-\/existing resource (shared\+\_\+ptr$<$\+T$>$) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_assets_a2928b8b30d8789c8f018c9b2c0591200}\label{struct_h_g_e_1_1_assets_a2928b8b30d8789c8f018c9b2c0591200}} 
+{\footnotesize template$<$typename T $>$ }\\std\+::shared\+\_\+ptr$<$ T $>$ {\bfseries Add\+Resource} (std\+::string \+\_\+path)
+\begin{DoxyCompactList}\small\item\em Template Function to add a new empty resource, given the resource type (T) and the file path to required file to create that resource (String) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_assets_a1b52ac8a91e8b5f856acf3ccc3d63304}\label{struct_h_g_e_1_1_assets_a1b52ac8a91e8b5f856acf3ccc3d63304}} 
+std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{struct_h_g_e_1_1_assets}{Assets}} $>$ {\bfseries Self}
+\begin{DoxyCompactList}\small\item\em Weak pointer pointing to Self (weak\+\_\+ptr$<$\+Assets$>$) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_assets_a479f528385dc64a1b00ded36f85cf1ad}\label{struct_h_g_e_1_1_assets_a479f528385dc64a1b00ded36f85cf1ad}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_h_g_e_1_1_mesh_builder}{Mesh\+Builder}} $>$ {\bfseries Meshbuilder}
+\begin{DoxyCompactList}\small\item\em Is a \mbox{\hyperlink{struct_h_g_e_1_1_mesh}{Mesh}} builder, used to create meshes given verticies and texture coordinates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Holds all the resources used in the project. 
+
+The assets class holds all the resources used within the game engine. These include Meshes, sounds and textures. The corresponding naming scheme can be found bellow, for naming and retriving the resources\+: ~\newline
+$\ast$.snd = \mbox{\hyperlink{struct_h_g_e_1_1_sound}{Sound}} File~\newline
+$\ast$.msh = \mbox{\hyperlink{struct_h_g_e_1_1_mesh}{Mesh}}~\newline
+$\ast$.txtr = \mbox{\hyperlink{struct_h_g_e_1_1_texture}{Texture}}~\newline
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Assets.\+h\item 
+Assets.\+cpp\end{DoxyCompactItemize}

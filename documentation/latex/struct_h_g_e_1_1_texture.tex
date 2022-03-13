@@ -1,0 +1,59 @@
+\hypertarget{struct_h_g_e_1_1_texture}{}\doxysection{HGE\+::Texture Struct Reference}
+\label{struct_h_g_e_1_1_texture}\index{HGE::Texture@{HGE::Texture}}
+
+
+Stores \mbox{\hyperlink{struct_h_g_e_1_1_texture}{Texture}} resources.  
+
+
+
+
+{\ttfamily \#include $<$Texture.\+h$>$}
+
+Inheritance diagram for HGE\+::Texture\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_h_g_e_1_1_texture}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{struct_h_g_e_1_1_texture_a3f10e45fef5621c8f7e8732349016d41}{Load}} (const std\+::string \&\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Loads a .png file, given a file path (const string\&) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_texture_afbbacf4e6159fdd39779de53b13786ce}\label{struct_h_g_e_1_1_texture_afbbacf4e6159fdd39779de53b13786ce}} 
+GLuint {\bfseries ID}
+\begin{DoxyCompactList}\small\item\em Stores the \mbox{\hyperlink{struct_h_g_e_1_1_texture}{Texture}} ID for the \mbox{\hyperlink{struct_h_g_e_1_1_texture}{Texture}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_texture_ad1f7fa651483663ae2963e66e1ee9562}\label{struct_h_g_e_1_1_texture_ad1f7fa651483663ae2963e66e1ee9562}} 
+ivec2 {\bfseries Texture\+Size}
+\begin{DoxyCompactList}\small\item\em Stores the x, y size (ivec2) of the loaded texture. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Stores \mbox{\hyperlink{struct_h_g_e_1_1_texture}{Texture}} resources. 
+
+The \mbox{\hyperlink{struct_h_g_e_1_1_texture}{Texture}} Structure, derived from \mbox{\hyperlink{struct_h_g_e_1_1_resource}{Resource}}, stores and loads textures from .png files, and uploads them to the GPU for open\+GL to use 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_h_g_e_1_1_texture_a3f10e45fef5621c8f7e8732349016d41}\label{struct_h_g_e_1_1_texture_a3f10e45fef5621c8f7e8732349016d41}} 
+\index{HGE::Texture@{HGE::Texture}!Load@{Load}}
+\index{Load@{Load}!HGE::Texture@{HGE::Texture}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily void HGE\+::\+Texture\+::\+Load (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Loads a .png file, given a file path (const string\&) 
+
+
+
+Reimplemented from \mbox{\hyperlink{struct_h_g_e_1_1_resource}{HGE\+::\+Resource}}.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Texture.\+h\item 
+Texture.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,36 @@
+\hypertarget{_rigidbody_8h_source}{}\doxysection{Rigidbody.\+h}
+\label{_rigidbody_8h_source}\index{Rigidbody.h@{Rigidbody.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#include "{}Component.h"{}}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}Maths.h"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{namespace }HGE}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10     \textcolor{keyword}{struct }Collider;    }
+\DoxyCodeLine{11     \textcolor{keyword}{struct }Transform;}
+\DoxyCodeLine{17     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_rigidbody}{Rigidbody}} : \mbox{\hyperlink{struct_h_g_e_1_1_component}{Component}}}
+\DoxyCodeLine{18     \{}
+\DoxyCodeLine{19         \textcolor{keyword}{friend} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_entity}{Entity}};}
+\DoxyCodeLine{20     \textcolor{keyword}{public}:}
+\DoxyCodeLine{22         vec3 \mbox{\hyperlink{struct_h_g_e_1_1_rigidbody_acd239f76b441480cc3713f74bb70c6ff}{GetVelocity}}();}
+\DoxyCodeLine{24         \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_rigidbody_a77a7c5bd25fad5f5124108daf634e112}{SetVelocity}}(vec3 \_velocity);}
+\DoxyCodeLine{26         \textcolor{keywordtype}{bool} \mbox{\hyperlink{struct_h_g_e_1_1_rigidbody_ab1d298b68d30e9a6e6b88c7a0689533a}{Gravity}};}
+\DoxyCodeLine{27     \textcolor{keyword}{private}:}
+\DoxyCodeLine{28         \textcolor{keywordtype}{void} onCreate();}
+\DoxyCodeLine{29         \textcolor{keywordtype}{void} onUpdate();}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31         vec3 velocity;}
+\DoxyCodeLine{32         std::weak\_ptr<Collider> collider;}
+\DoxyCodeLine{33         std::weak\_ptr<Transform> transform;}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36     \};}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 \}}
+
+\end{DoxyCode}

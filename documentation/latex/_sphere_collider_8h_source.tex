@@ -1,0 +1,28 @@
+\hypertarget{_sphere_collider_8h_source}{}\doxysection{Sphere\+Collider.\+h}
+\label{_sphere_collider_8h_source}\index{SphereCollider.h@{SphereCollider.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#include "{}Collider.h"{}}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}Component.h"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}Maths.h"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{keyword}{namespace }HGE}
+\DoxyCodeLine{6 \{}
+\DoxyCodeLine{7     \textcolor{keyword}{struct }BoxCollider;}
+\DoxyCodeLine{14     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_sphere_collider}{SphereCollider}} : \mbox{\hyperlink{struct_h_g_e_1_1_collider}{Collider}}}
+\DoxyCodeLine{15     \{}
+\DoxyCodeLine{16         \textcolor{keyword}{friend} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_entity}{Entity}};}
+\DoxyCodeLine{17         \textcolor{keyword}{friend} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_physics_engine}{PhysicsEngine}};}
+\DoxyCodeLine{18         \textcolor{keyword}{friend} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_box_collider}{BoxCollider}};}
+\DoxyCodeLine{19     \textcolor{keyword}{public}:}
+\DoxyCodeLine{21         \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_sphere_collider_a030c802599f4b85cf2db0f74a08bd652}{SetRadius}}(\textcolor{keywordtype}{float} \_radius);}
+\DoxyCodeLine{23         \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_sphere_collider_a0f0b9b27d6017d36db6a202fe6de02f7}{RegisterCollider}}(std::shared\_ptr<SphereCollider> \_sphere);}
+\DoxyCodeLine{24     \textcolor{keyword}{private}:}
+\DoxyCodeLine{25         \mbox{\hyperlink{struct_h_g_e_1_1_collision_event}{CollisionEvent}} checkCollisionWithSphere(std::shared\_ptr<SphereCollider> \_collider);}
+\DoxyCodeLine{26         \mbox{\hyperlink{struct_h_g_e_1_1_collision_event}{CollisionEvent}} checkCollisionWithBox(std::shared\_ptr<BoxCollider> \_collider);}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28         \textcolor{keywordtype}{float} radius;}
+\DoxyCodeLine{29     \};}
+\DoxyCodeLine{30 \}}
+
+\end{DoxyCode}

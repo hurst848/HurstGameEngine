@@ -1,0 +1,56 @@
+\hypertarget{_collider_8h_source}{}\doxysection{Collider.\+h}
+\label{_collider_8h_source}\index{Collider.h@{Collider.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_COLLIDER\_H\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_COLLIDER\_H\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}Component.h"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}Maths.h"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{namespace }HGE}
+\DoxyCodeLine{14 \{}
+\DoxyCodeLine{15     \textcolor{keyword}{struct }Transform;}
+\DoxyCodeLine{16     \textcolor{keyword}{struct }Collider;}
+\DoxyCodeLine{17     \textcolor{keyword}{struct }CollisionEvent;}
+\DoxyCodeLine{18     \textcolor{keyword}{struct }SphereCollider;}
+\DoxyCodeLine{19     \textcolor{keyword}{struct }BoxCollider;}
+\DoxyCodeLine{26     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_collision_event}{CollisionEvent}}}
+\DoxyCodeLine{27     \{}
+\DoxyCodeLine{28         \textcolor{keyword}{friend} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_entity}{Entity}};}
+\DoxyCodeLine{29     \textcolor{keyword}{public}:}
+\DoxyCodeLine{31         std::weak\_ptr<Collider> \mbox{\hyperlink{struct_h_g_e_1_1_collision_event_af9c984e43409a51bc135d5a40cbc602c}{DetectedCollider}};}
+\DoxyCodeLine{33         vec3 \mbox{\hyperlink{struct_h_g_e_1_1_collision_event_a4d0dc1be384c37bbea54f1dbe4743a1b}{CollisionLocation}};}
+\DoxyCodeLine{35         \textcolor{keywordtype}{bool} \mbox{\hyperlink{struct_h_g_e_1_1_collision_event_a4c3675275535d517a8193f153670416e}{CollisionOccured}};}
+\DoxyCodeLine{36     \};}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{44     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_collider}{Collider}} : \mbox{\hyperlink{struct_h_g_e_1_1_component}{Component}}}
+\DoxyCodeLine{45     \{}
+\DoxyCodeLine{46         \textcolor{keyword}{friend} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_physics_engine}{PhysicsEngine}};}
+\DoxyCodeLine{47     \textcolor{keyword}{public}:}
+\DoxyCodeLine{49         \textcolor{keywordtype}{bool} \mbox{\hyperlink{struct_h_g_e_1_1_collider_ad800e9ce9c9c075845fd7099c95f81a0}{IsColliding}}();}
+\DoxyCodeLine{51         std::vector<CollisionEvent> \mbox{\hyperlink{struct_h_g_e_1_1_collider_a4de915d06d243ce45c9ea63551bed929}{GetAllRigidbodyCollisions}}();}
+\DoxyCodeLine{53         std::vector<CollisionEvent> \mbox{\hyperlink{struct_h_g_e_1_1_collider_afa4fd57cebc271007fed6bf7c7e5d061}{GetAllCollisions}}();}
+\DoxyCodeLine{55         std::string \mbox{\hyperlink{struct_h_g_e_1_1_collider_a1486459fb99b2829b3691360d02f31a0}{Tag}};}
+\DoxyCodeLine{57         \textcolor{keywordtype}{bool} \mbox{\hyperlink{struct_h_g_e_1_1_collider_ab6a4579ab3c0b16a96b4041bc9be2136}{CanInteractWithRigidbodies}};}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59     \textcolor{keyword}{protected}:}
+\DoxyCodeLine{61         \textcolor{keyword}{virtual} \mbox{\hyperlink{struct_h_g_e_1_1_collision_event}{CollisionEvent}} \mbox{\hyperlink{struct_h_g_e_1_1_collider_a2d0d1b732d69e75f9430698a9607a9e7}{checkCollisionWithSphere}}(std::shared\_ptr<SphereCollider> \_collider) \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{struct_h_g_e_1_1_collision_event}{CollisionEvent}}(); \};}
+\DoxyCodeLine{63         \textcolor{keyword}{virtual} \mbox{\hyperlink{struct_h_g_e_1_1_collision_event}{CollisionEvent}} \mbox{\hyperlink{struct_h_g_e_1_1_collider_a11fd087d976c3b5ea2b8adfa33776117}{checkCollisionWithBox}}(std::shared\_ptr<BoxCollider> \_collider) \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{struct_h_g_e_1_1_collision_event}{CollisionEvent}}(); \};}
+\DoxyCodeLine{65         std::weak\_ptr<Transform> \mbox{\hyperlink{struct_h_g_e_1_1_collider_a4952e83b863f263c4cae0762fd2cec9e}{transform}};}
+\DoxyCodeLine{67         std::vector<CollisionEvent> \mbox{\hyperlink{struct_h_g_e_1_1_collider_aab2cff4e39e6c005368bb4eb0a273fe9}{currentColliders}};}
+\DoxyCodeLine{69         \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_collider_a873d5d38e44ef11eac8f0ee83e3dc4bb}{onCreate}}();}
+\DoxyCodeLine{70     \};}
+\DoxyCodeLine{71 \}}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// !\_COLLIDER\_H\_}}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75 }
+
+\end{DoxyCode}

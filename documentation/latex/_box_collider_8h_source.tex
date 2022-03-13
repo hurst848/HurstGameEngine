@@ -1,0 +1,32 @@
+\hypertarget{_box_collider_8h_source}{}\doxysection{Box\+Collider.\+h}
+\label{_box_collider_8h_source}\index{BoxCollider.h@{BoxCollider.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#include "{}Collider.h"{}}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}Component.h"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}Maths.h"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{keyword}{namespace }HGE}
+\DoxyCodeLine{6 \{}
+\DoxyCodeLine{7     \textcolor{keyword}{struct }SphereCollider;}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{15     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_box_collider}{BoxCollider}} : \mbox{\hyperlink{struct_h_g_e_1_1_collider}{Collider}}}
+\DoxyCodeLine{16     \{}
+\DoxyCodeLine{17         \textcolor{keyword}{friend} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_entity}{Entity}};}
+\DoxyCodeLine{18         \textcolor{keyword}{friend} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_physics_engine}{PhysicsEngine}};}
+\DoxyCodeLine{19         \textcolor{keyword}{friend} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_sphere_collider}{SphereCollider}};}
+\DoxyCodeLine{20     \textcolor{keyword}{public}: }
+\DoxyCodeLine{22         \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_box_collider_ae728933c2dea71050e531573b5543200}{SetHalfExtents}}(vec3 \_halfExtents);}
+\DoxyCodeLine{24         \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_box_collider_a60944e1cdae4143c4ed222b7564ca5a5}{RegisterCollider}}(std::shared\_ptr<BoxCollider> \_box);}
+\DoxyCodeLine{25     \textcolor{keyword}{private}:}
+\DoxyCodeLine{26         \mbox{\hyperlink{struct_h_g_e_1_1_collision_event}{CollisionEvent}} checkCollisionWithSphere(std::shared\_ptr<SphereCollider> \_collider);}
+\DoxyCodeLine{27         \mbox{\hyperlink{struct_h_g_e_1_1_collision_event}{CollisionEvent}} checkCollisionWithBox(std::shared\_ptr<BoxCollider> \_collider);}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29         vec3 halfExtents;}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     \};}
+\DoxyCodeLine{34 \}}
+
+\end{DoxyCode}

@@ -1,0 +1,38 @@
+\hypertarget{_component_8h_source}{}\doxysection{Component.\+h}
+\label{_component_8h_source}\index{Component.h@{Component.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_COMPONENT\_H\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_COMPONENT\_H\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{namespace }HGE}
+\DoxyCodeLine{7 \{}
+\DoxyCodeLine{8     \textcolor{keyword}{struct }Core;}
+\DoxyCodeLine{16     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_component}{Component}}}
+\DoxyCodeLine{17     \{}
+\DoxyCodeLine{18         \textcolor{keyword}{friend} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_entity}{Entity}};}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{keyword}{public}:}
+\DoxyCodeLine{22         std::shared\_ptr<Core> \mbox{\hyperlink{struct_h_g_e_1_1_component_af0d051bac322231096a6c0167fc78966}{GetCore}}();}
+\DoxyCodeLine{24         std::shared\_ptr<Entity> \mbox{\hyperlink{struct_h_g_e_1_1_component_a8078ff427913d9f400bdcfa7239d6ab7}{GetEntity}}();}
+\DoxyCodeLine{26         std::weak\_ptr<Component> \mbox{\hyperlink{struct_h_g_e_1_1_component_ab961b2ff15628192878e60d88e12a824}{Self}};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28     \textcolor{keyword}{protected}:}
+\DoxyCodeLine{30         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_component_a9523851bd2f42c39dded00fbae733c4f}{onCreate}}() \{\}}
+\DoxyCodeLine{32         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_component_a17bc382f26d7000aeda7beed2293db5b}{onStart}}() \{\}}
+\DoxyCodeLine{34         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_component_a885bb26084d7cd3e82f1630cc9d4786c}{onUpdate}}() \{\}}
+\DoxyCodeLine{36         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_component_adeada956be4c0a428f381e4d75ea4bb1}{onRender}}() \{\}}
+\DoxyCodeLine{38         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_component_a13c24dfecda438f5526ec6fcd8de6b26}{onPostRender}}() \{\}}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40     \textcolor{keyword}{private}:}
+\DoxyCodeLine{41         std::weak\_ptr<Entity> entity;}
+\DoxyCodeLine{42     \};}
+\DoxyCodeLine{43 \}}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// !\_COMPONENT\_H\_}}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 }
+
+\end{DoxyCode}

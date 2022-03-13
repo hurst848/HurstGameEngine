@@ -1,0 +1,43 @@
+\hypertarget{struct_h_g_e_1_1_physics_engine}{}\doxysection{HGE\+::Physics\+Engine Struct Reference}
+\label{struct_h_g_e_1_1_physics_engine}\index{HGE::PhysicsEngine@{HGE::PhysicsEngine}}
+
+
+Proccess all collisions and physics updates.  
+
+
+
+
+{\ttfamily \#include $<$Physics\+Engine.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_physics_engine_a9559d97c3c749d7e6aea02cada87d391}\label{struct_h_g_e_1_1_physics_engine_a9559d97c3c749d7e6aea02cada87d391}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_h_g_e_1_1_physics_engine}{Physics\+Engine}} $>$ {\bfseries Initialize} ()
+\begin{DoxyCompactList}\small\item\em Initailizes the \mbox{\hyperlink{struct_h_g_e_1_1_physics_engine}{Physics\+Engine}} and acts as a constructor, returns a shared pointer to a new \mbox{\hyperlink{struct_h_g_e_1_1_physics_engine}{Physics\+Engine}} (shared\+\_\+ptr$<$\+Physics\+Engine$>$) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_physics_engine_aeaed440edac7a01cd24bd503596d003e}\label{struct_h_g_e_1_1_physics_engine_aeaed440edac7a01cd24bd503596d003e}} 
+void {\bfseries Update} ()
+\begin{DoxyCompactList}\small\item\em Is called every update of the \mbox{\hyperlink{struct_h_g_e_1_1_core}{Core}}, checks for collisions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_physics_engine_aaa0c030a7a23ab64abc65d9497fea69c}\label{struct_h_g_e_1_1_physics_engine_aaa0c030a7a23ab64abc65d9497fea69c}} 
+struct {\bfseries Collider}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_physics_engine_a1d32e60d54ca2f46b0ad2755dfd46ddc}\label{struct_h_g_e_1_1_physics_engine_a1d32e60d54ca2f46b0ad2755dfd46ddc}} 
+struct {\bfseries Box\+Collider}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_physics_engine_a0760b7f94eb3220c87258b622238fe32}\label{struct_h_g_e_1_1_physics_engine_a0760b7f94eb3220c87258b622238fe32}} 
+struct {\bfseries Sphere\+Collider}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Proccess all collisions and physics updates. 
+
+The \mbox{\hyperlink{struct_h_g_e_1_1_physics_engine}{Physics\+Engine}} Structure is a crude implemtation of physics. It stores all of the colliders and checks every update for collisions. 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Physics\+Engine.\+h\item 
+Physics\+Engine.\+cpp\end{DoxyCompactItemize}

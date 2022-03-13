@@ -1,0 +1,36 @@
+\hypertarget{_environment_8h_source}{}\doxysection{Environment.\+h}
+\label{_environment_8h_source}\index{Environment.h@{Environment.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{keyword}{namespace }HGE}
+\DoxyCodeLine{4 \{}
+\DoxyCodeLine{10     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_game_environment}{GameEnvironment}}}
+\DoxyCodeLine{11     \{}
+\DoxyCodeLine{12         \textcolor{keyword}{friend} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_camera}{Camera}};}
+\DoxyCodeLine{13         \textcolor{keyword}{friend} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_mesh_renderer}{MeshRenderer}};}
+\DoxyCodeLine{14         }
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16     \textcolor{keyword}{public}:}
+\DoxyCodeLine{18         std::shared\_ptr<GameEnvironment> \mbox{\hyperlink{struct_h_g_e_1_1_game_environment_a0aeab8d3eabcfe84fd0798987284b111}{Initialize}}();}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{21         \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_game_environment_afab8f61a8d9aed5969e2cb160602b4e7}{Update}}();}
+\DoxyCodeLine{23         \textcolor{keywordtype}{float} \mbox{\hyperlink{struct_h_g_e_1_1_game_environment_a37cc6747385ebf953064d3c9456967ca}{GetDeltaTime}}();}
+\DoxyCodeLine{24     \textcolor{keyword}{private}:}
+\DoxyCodeLine{25         }
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27         }
+\DoxyCodeLine{28         std::shared\_ptr<Camera> mainCamera;}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31         \textcolor{keywordtype}{float} lastTime;}
+\DoxyCodeLine{32         \textcolor{keywordtype}{float} deltaTime;}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34         }
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36     \};}
+\DoxyCodeLine{37 \}}
+\DoxyCodeLine{38 }
+
+\end{DoxyCode}

@@ -1,0 +1,43 @@
+\hypertarget{struct_h_g_e_1_1_game_environment}{}\doxysection{HGE\+::Game\+Environment Struct Reference}
+\label{struct_h_g_e_1_1_game_environment}\index{HGE::GameEnvironment@{HGE::GameEnvironment}}
+
+
+Is a strucure that stores environmental data.  
+
+
+
+
+{\ttfamily \#include $<$Environment.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_game_environment_a0aeab8d3eabcfe84fd0798987284b111}\label{struct_h_g_e_1_1_game_environment_a0aeab8d3eabcfe84fd0798987284b111}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_h_g_e_1_1_game_environment}{Game\+Environment}} $>$ {\bfseries Initialize} ()
+\begin{DoxyCompactList}\small\item\em Initailizes the Environment and acts as a constructor, returns a shared pointer to a new Environment (shared\+\_\+ptr$<$\+Environment$>$) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_game_environment_afab8f61a8d9aed5969e2cb160602b4e7}\label{struct_h_g_e_1_1_game_environment_afab8f61a8d9aed5969e2cb160602b4e7}} 
+void {\bfseries Update} ()
+\begin{DoxyCompactList}\small\item\em Is called every update of the \mbox{\hyperlink{struct_h_g_e_1_1_core}{Core}}, updates the delta\+Time. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_game_environment_a37cc6747385ebf953064d3c9456967ca}\label{struct_h_g_e_1_1_game_environment_a37cc6747385ebf953064d3c9456967ca}} 
+float {\bfseries Get\+Delta\+Time} ()
+\begin{DoxyCompactList}\small\item\em Returns the delta\+Time (float) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_game_environment_a2a8bdb9cb6ea9bd3ec5e7975135e8a8d}\label{struct_h_g_e_1_1_game_environment_a2a8bdb9cb6ea9bd3ec5e7975135e8a8d}} 
+struct {\bfseries Camera}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_game_environment_a9ad0a50c1b74b65aa44a478f9a6b45d6}\label{struct_h_g_e_1_1_game_environment_a9ad0a50c1b74b65aa44a478f9a6b45d6}} 
+struct {\bfseries Mesh\+Renderer}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Is a strucure that stores environmental data. 
+
+The Environment Structure stores data that needs to kept seperate from core. This data includes the \mbox{\hyperlink{struct_h_g_e_1_1_camera}{Camera}} as well as the calculation of delta\+Time. 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Environment.\+h\item 
+Environment.\+cpp\end{DoxyCompactItemize}

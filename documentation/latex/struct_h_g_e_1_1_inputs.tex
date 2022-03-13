@@ -1,0 +1,58 @@
+\hypertarget{struct_h_g_e_1_1_inputs}{}\doxysection{HGE\+::Inputs Struct Reference}
+\label{struct_h_g_e_1_1_inputs}\index{HGE::Inputs@{HGE::Inputs}}
+
+
+Where inputs for the game engine are handled.  
+
+
+
+
+{\ttfamily \#include $<$Input.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_inputs_af6625a3639e357fca050966b5ea322f1}\label{struct_h_g_e_1_1_inputs_af6625a3639e357fca050966b5ea322f1}} 
+bool {\bfseries Get\+Mouse\+Down} (const int \+\_\+button)
+\begin{DoxyCompactList}\small\item\em Returns (bool) true a mouse button is held down and false if it is up, given an int specifing a mouse charteristic (int) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_inputs_a0512f9f0f42e409dd82efc9fe2a4cff6}\label{struct_h_g_e_1_1_inputs_a0512f9f0f42e409dd82efc9fe2a4cff6}} 
+bool {\bfseries Get\+Mouse\+Up} (const int \+\_\+button)
+\begin{DoxyCompactList}\small\item\em Returns (bool) true a mouse button is not held down and false if it is down, given an int specifing a mouse charteristic (int) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_inputs_a6ec761e7e8725a000884484fbf364c9d}\label{struct_h_g_e_1_1_inputs_a6ec761e7e8725a000884484fbf364c9d}} 
+vec2 {\bfseries Get\+Mouse\+Data} (const int \+\_\+charateristic)
+\begin{DoxyCompactList}\small\item\em Returns a mouse position (vec2), given an int specifing a mouse charteristic (int) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_inputs_a4c21b811c81d8dfe4455ca5fc2ee1b6e}\label{struct_h_g_e_1_1_inputs_a4c21b811c81d8dfe4455ca5fc2ee1b6e}} 
+void {\bfseries Set\+Mouse\+Mode} (const int \+\_\+setting)
+\begin{DoxyCompactList}\small\item\em Sets the mouse mode to relative of free, given an int specifing a mouse charteristic (int) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_inputs_a64f76d819839ba07207e15eac736e569}\label{struct_h_g_e_1_1_inputs_a64f76d819839ba07207e15eac736e569}} 
+bool {\bfseries Get\+Key\+Down} (const int \+\_\+key)
+\begin{DoxyCompactList}\small\item\em Returns (bool) true a key is held down and false if it is up, given an int specifing a key (int) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_inputs_a56b2a78853a729f6dd6723363e4eb134}\label{struct_h_g_e_1_1_inputs_a56b2a78853a729f6dd6723363e4eb134}} 
+bool {\bfseries Get\+Key\+Up} (const int \+\_\+key)
+\begin{DoxyCompactList}\small\item\em Returns (bool) true a key is not held down and false if it is down, given an int specifing a key (int) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_inputs_ad44479afc213545f516eaf01a0c7443c}\label{struct_h_g_e_1_1_inputs_ad44479afc213545f516eaf01a0c7443c}} 
+\mbox{\hyperlink{struct_h_g_e_1_1_keys}{Keys}} {\bfseries Keyboard}
+\begin{DoxyCompactList}\small\item\em Stores all of the SDLK keyboard bindings (\mbox{\hyperlink{struct_h_g_e_1_1_keys}{Keys}}) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_inputs_aa01a2c1af781e999dd85868558941074}\label{struct_h_g_e_1_1_inputs_aa01a2c1af781e999dd85868558941074}} 
+\mbox{\hyperlink{struct_h_g_e_1_1_mouse_charateristics}{Mouse\+Charateristics}} {\bfseries Mouse}
+\begin{DoxyCompactList}\small\item\em Stores all of the SDLK mouse bindings (\mbox{\hyperlink{struct_h_g_e_1_1_mouse_charateristics}{Mouse\+Charateristics}}) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_inputs_acd0789873af2006e142a579250891ce8}\label{struct_h_g_e_1_1_inputs_acd0789873af2006e142a579250891ce8}} 
+struct {\bfseries Core}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Where inputs for the game engine are handled. 
+
+The \mbox{\hyperlink{struct_h_g_e_1_1_inputs}{Inputs}} Structure allows the user to retrive the state of any key or mouse charteristc specified int the \mbox{\hyperlink{struct_h_g_e_1_1_keys}{Keys}} or \mbox{\hyperlink{struct_h_g_e_1_1_mouse_charateristics}{Mouse\+Charateristics}} structures. 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Input.\+h\item 
+Input.\+cpp\end{DoxyCompactItemize}

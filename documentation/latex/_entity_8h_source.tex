@@ -1,0 +1,67 @@
+\hypertarget{_entity_8h_source}{}\doxysection{Entity.\+h}
+\label{_entity_8h_source}\index{Entity.h@{Entity.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{keyword}{namespace }HGE}
+\DoxyCodeLine{5 \{}
+\DoxyCodeLine{6     \textcolor{keyword}{struct }Component;}
+\DoxyCodeLine{7     \textcolor{keyword}{struct }Transform;}
+\DoxyCodeLine{13     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_entity}{Entity}}}
+\DoxyCodeLine{14     \{}
+\DoxyCodeLine{15         \textcolor{keyword}{friend} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_core}{Core}};}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17     \textcolor{keyword}{public}:}
+\DoxyCodeLine{19         std::shared\_ptr<Core> \mbox{\hyperlink{struct_h_g_e_1_1_entity_aa162f50ddce9bcf0c3857a937bf75f79}{GetCore}}();}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{22         \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{23         std::shared\_ptr<T> \mbox{\hyperlink{struct_h_g_e_1_1_entity_a704bb5bf1ea1538fae0467ca41392229}{AddComponent}}()}
+\DoxyCodeLine{24         \{}
+\DoxyCodeLine{25             std::shared\_ptr<T> \_component = std::make\_shared<T>();}
+\DoxyCodeLine{26             \_component-\/>Self = \_component;}
+\DoxyCodeLine{27             \_component-\/>entity = \mbox{\hyperlink{struct_h_g_e_1_1_entity_ad89b7b092f25e45fa4a1eca9b5ec79fc}{Self}}.lock();}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29             \_component-\/>onCreate();}
+\DoxyCodeLine{30             components.push\_back(\_component);}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32             \textcolor{keywordflow}{return} \_component;}
+\DoxyCodeLine{33         \}}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{36         \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{37         std::shared\_ptr<T> \mbox{\hyperlink{struct_h_g_e_1_1_entity_a9b9b727e419d00a8e759eab55e95cb69}{GetComponent}}()}
+\DoxyCodeLine{38         \{}
+\DoxyCodeLine{39             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < components.size(); i++)}
+\DoxyCodeLine{40             \{}
+\DoxyCodeLine{41                 std::shared\_ptr<T> rtrn = std::dynamic\_pointer\_cast<T>(components.at(i));}
+\DoxyCodeLine{42                 \textcolor{keywordflow}{if} (rtrn)}
+\DoxyCodeLine{43                 \{}
+\DoxyCodeLine{44                     \textcolor{keywordflow}{return} rtrn;}
+\DoxyCodeLine{45                 \}}
+\DoxyCodeLine{46             \}}
+\DoxyCodeLine{47         \}}
+\DoxyCodeLine{49         std::weak\_ptr<Entity> \mbox{\hyperlink{struct_h_g_e_1_1_entity_ad89b7b092f25e45fa4a1eca9b5ec79fc}{Self}};}
+\DoxyCodeLine{51         std::shared\_ptr<Transform> \mbox{\hyperlink{struct_h_g_e_1_1_entity_a9efb9b07f9f606303723ccbac0a4a182}{GetTransform}}();}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{54         \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_entity_aa0e34ecc19c19743420eaa79ec962682}{MarkForDeletion}}() \{ toBeDeleted = \textcolor{keyword}{true}; \}}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56     \textcolor{keyword}{private}:}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58         \textcolor{keywordtype}{void} onCreate();}
+\DoxyCodeLine{59         \textcolor{keywordtype}{void} onStart();}
+\DoxyCodeLine{60         \textcolor{keywordtype}{void} onUpdate();}
+\DoxyCodeLine{61         \textcolor{keywordtype}{void} onRender();}
+\DoxyCodeLine{62         \textcolor{keywordtype}{void} onPostRender();}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64         \textcolor{keywordtype}{bool} toBeDeleted = \textcolor{keyword}{false};}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66         std::vector< std::shared\_ptr<Component> > components;}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68         std::weak\_ptr<Core> core;}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70         std::weak\_ptr<Transform> transform;}
+\DoxyCodeLine{71     \};}
+\DoxyCodeLine{72 \}}
+
+\end{DoxyCode}

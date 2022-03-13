@@ -1,0 +1,49 @@
+\hypertarget{_core_8h_source}{}\doxysection{Core.\+h}
+\label{_core_8h_source}\index{Core.h@{Core.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{keyword}{namespace }HGE}
+\DoxyCodeLine{5 \{}
+\DoxyCodeLine{6     \textcolor{keyword}{struct }Entity;}
+\DoxyCodeLine{7     \textcolor{keyword}{struct }Screen;}
+\DoxyCodeLine{8     \textcolor{keyword}{struct }Assets;}
+\DoxyCodeLine{9     \textcolor{keyword}{struct }Inputs;}
+\DoxyCodeLine{10     \textcolor{keyword}{struct }GameEnvironment;}
+\DoxyCodeLine{11     \textcolor{keyword}{struct }PhysicsEngine;}
+\DoxyCodeLine{12     \textcolor{keyword}{struct }AudioManager;}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{21     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_core}{Core}}}
+\DoxyCodeLine{22     \{}
+\DoxyCodeLine{23     \textcolor{keyword}{public}:}
+\DoxyCodeLine{25         \textcolor{keyword}{static} std::shared\_ptr<Core> \mbox{\hyperlink{struct_h_g_e_1_1_core_acd0cc45e44efa679a579ffc06d3b6ba8}{Initialize}}();}
+\DoxyCodeLine{27         std::shared\_ptr<Entity> \mbox{\hyperlink{struct_h_g_e_1_1_core_ae05df50f92ba95a1e7fb078d6923a47f}{AddEntity}}();}
+\DoxyCodeLine{29         std::shared\_ptr<Entity> \mbox{\hyperlink{struct_h_g_e_1_1_core_ae05df50f92ba95a1e7fb078d6923a47f}{AddEntity}}(std::shared\_ptr<Entity> \_ent);}
+\DoxyCodeLine{31         \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_core_a679ec7fe7a9451f3646f30b4f77a7186}{StartEngine}}();}
+\DoxyCodeLine{33         \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_core_ad3b6bce918b52e415316b042d19ebc25}{StopEngine}}();}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{36         std::weak\_ptr<Core> \mbox{\hyperlink{struct_h_g_e_1_1_core_a817b023c8c8b184b36bc17ae1a10e101}{Self}};}
+\DoxyCodeLine{38         std::shared\_ptr<Assets> \mbox{\hyperlink{struct_h_g_e_1_1_core_aa4a44a68a801f6295c669d794ca914a2}{Resources}};}
+\DoxyCodeLine{40         std::shared\_ptr<Inputs> \mbox{\hyperlink{struct_h_g_e_1_1_core_ad318927dd205e662f32f004168738634}{Input}};}
+\DoxyCodeLine{42         std::shared\_ptr<GameEnvironment> \mbox{\hyperlink{struct_h_g_e_1_1_core_a320aaf0660a1f9a16f17cd0c387dd3d4}{Environment}};}
+\DoxyCodeLine{44         std::shared\_ptr<PhysicsEngine> \mbox{\hyperlink{struct_h_g_e_1_1_core_a6b89d0b56122d23ff5a409657d7c6d82}{Physics}};}
+\DoxyCodeLine{46         std::shared\_ptr<AudioManager> \mbox{\hyperlink{struct_h_g_e_1_1_core_a230b33e7a8fcfbfea744b38f1254db8c}{Audio}};}
+\DoxyCodeLine{47     \textcolor{keyword}{private}:}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49         \textcolor{keywordtype}{bool} running = \textcolor{keyword}{true};}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51         std::vector< std::shared\_ptr<Entity> > entities;}
+\DoxyCodeLine{52         }
+\DoxyCodeLine{53         }
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55         std::shared\_ptr<Screen> screen;}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57         }
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59     \};}
+\DoxyCodeLine{60 \}}
+\DoxyCodeLine{61 }
+
+\end{DoxyCode}

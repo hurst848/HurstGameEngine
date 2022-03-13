@@ -1,0 +1,64 @@
+\hypertarget{struct_h_g_e_1_1_core}{}\doxysection{HGE\+::Core Struct Reference}
+\label{struct_h_g_e_1_1_core}\index{HGE::Core@{HGE::Core}}
+
+
+Is where the game engine actually runs.  
+
+
+
+
+{\ttfamily \#include $<$Core.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_core_ae05df50f92ba95a1e7fb078d6923a47f}\label{struct_h_g_e_1_1_core_ae05df50f92ba95a1e7fb078d6923a47f}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_h_g_e_1_1_entity}{Entity}} $>$ {\bfseries Add\+Entity} ()
+\begin{DoxyCompactList}\small\item\em Adds a new empty \mbox{\hyperlink{struct_h_g_e_1_1_entity}{Entity}}, and returns a shared pointer to the created \mbox{\hyperlink{struct_h_g_e_1_1_entity}{Entity}} (shared\+\_\+ptr$<$\+Entity$>$) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_core_a4bc13d590ac48172364bf3af2eed1bf4}\label{struct_h_g_e_1_1_core_a4bc13d590ac48172364bf3af2eed1bf4}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_h_g_e_1_1_entity}{Entity}} $>$ {\bfseries Add\+Entity} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_h_g_e_1_1_entity}{Entity}} $>$ \+\_\+ent)
+\begin{DoxyCompactList}\small\item\em Adds a new \mbox{\hyperlink{struct_h_g_e_1_1_entity}{Entity}}, given an existing entity (shared\+\_\+ptr$<$\+Entity$>$), returns a shared pointer to an entity (shared\+\_\+ptr$<$\+Entity$>$) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_core_a679ec7fe7a9451f3646f30b4f77a7186}\label{struct_h_g_e_1_1_core_a679ec7fe7a9451f3646f30b4f77a7186}} 
+void {\bfseries Start\+Engine} ()
+\begin{DoxyCompactList}\small\item\em Starts the game loop and begins calling the on\+Update, on\+Render and on\+Post\+Render methods. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_core_ad3b6bce918b52e415316b042d19ebc25}\label{struct_h_g_e_1_1_core_ad3b6bce918b52e415316b042d19ebc25}} 
+void {\bfseries Stop\+Engine} ()
+\begin{DoxyCompactList}\small\item\em Stops the engine from running and exits the application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_core_acd0cc45e44efa679a579ffc06d3b6ba8}\label{struct_h_g_e_1_1_core_acd0cc45e44efa679a579ffc06d3b6ba8}} 
+static std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_h_g_e_1_1_core}{Core}} $>$ {\bfseries Initialize} ()
+\begin{DoxyCompactList}\small\item\em Initailizes the game engine and acts as a constructor, returns a shared pointer to a new core (shared\+\_\+ptr$<$\+Core$>$) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_core_a817b023c8c8b184b36bc17ae1a10e101}\label{struct_h_g_e_1_1_core_a817b023c8c8b184b36bc17ae1a10e101}} 
+std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{struct_h_g_e_1_1_core}{Core}} $>$ {\bfseries Self}
+\begin{DoxyCompactList}\small\item\em Stores a weak pointer to itself (weak\+\_\+ptr$<$\+Core$>$) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_core_aa4a44a68a801f6295c669d794ca914a2}\label{struct_h_g_e_1_1_core_aa4a44a68a801f6295c669d794ca914a2}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_h_g_e_1_1_assets}{Assets}} $>$ {\bfseries Resources}
+\begin{DoxyCompactList}\small\item\em Stores a shared pointer to an instance of the \mbox{\hyperlink{struct_h_g_e_1_1_assets}{Assets}} structure (shared\+\_\+ptr$<$\+Assets$>$) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_core_ad318927dd205e662f32f004168738634}\label{struct_h_g_e_1_1_core_ad318927dd205e662f32f004168738634}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_h_g_e_1_1_inputs}{Inputs}} $>$ {\bfseries Input}
+\begin{DoxyCompactList}\small\item\em Stores a shared pointer to an instance of the \mbox{\hyperlink{struct_h_g_e_1_1_inputs}{Inputs}} structure (shared\+\_\+ptr$<$\+Inputs$>$) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_core_a320aaf0660a1f9a16f17cd0c387dd3d4}\label{struct_h_g_e_1_1_core_a320aaf0660a1f9a16f17cd0c387dd3d4}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_h_g_e_1_1_game_environment}{Game\+Environment}} $>$ {\bfseries Environment}
+\begin{DoxyCompactList}\small\item\em Stores a shared pointer to an instance of the \mbox{\hyperlink{struct_h_g_e_1_1_game_environment}{Game\+Environment}} structure (shared\+\_\+ptr$<$\+Game\+Environment$>$) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_core_a6b89d0b56122d23ff5a409657d7c6d82}\label{struct_h_g_e_1_1_core_a6b89d0b56122d23ff5a409657d7c6d82}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_h_g_e_1_1_physics_engine}{Physics\+Engine}} $>$ {\bfseries Physics}
+\begin{DoxyCompactList}\small\item\em Stores a shared pointer to an instance of the \mbox{\hyperlink{struct_h_g_e_1_1_physics_engine}{Physics\+Engine}} structure (shared\+\_\+ptr$<$\+Physics\+Engine$>$) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_h_g_e_1_1_core_a230b33e7a8fcfbfea744b38f1254db8c}\label{struct_h_g_e_1_1_core_a230b33e7a8fcfbfea744b38f1254db8c}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_h_g_e_1_1_audio_manager}{Audio\+Manager}} $>$ {\bfseries Audio}
+\begin{DoxyCompactList}\small\item\em Stores a shared pointer to an instance of the \mbox{\hyperlink{struct_h_g_e_1_1_audio_manager}{Audio\+Manager}} structure (shared\+\_\+ptr$<$\+Audio\+Manager$>$) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Is where the game engine actually runs. 
+
+The \mbox{\hyperlink{struct_h_g_e_1_1_core}{Core}} Structure acts as the root node for the entire game engine. All crucial structure required for operation are stored here. The game loop also occurs within this structure. 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Core.\+h\item 
+Core.\+cpp\end{DoxyCompactItemize}

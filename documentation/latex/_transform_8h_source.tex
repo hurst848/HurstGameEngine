@@ -1,0 +1,41 @@
+\hypertarget{_transform_8h_source}{}\doxysection{Transform.\+h}
+\label{_transform_8h_source}\index{Transform.h@{Transform.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#include "{}Component.h"{}}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}Maths.h"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{keyword}{namespace }HGE}
+\DoxyCodeLine{6 \{}
+\DoxyCodeLine{13     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_transform}{Transform}} : \mbox{\hyperlink{struct_h_g_e_1_1_component}{Component}}}
+\DoxyCodeLine{14     \{}
+\DoxyCodeLine{15     \textcolor{keyword}{public}:}
+\DoxyCodeLine{17         \mbox{\hyperlink{struct_h_g_e_1_1_transform_a06a172820048e5501863a1d2a02fe645}{Transform}}();}
+\DoxyCodeLine{19         mat4 \mbox{\hyperlink{struct_h_g_e_1_1_transform_a0ffc95414f89585ad35f41ed58dad30f}{GetModelMatrix}}();}
+\DoxyCodeLine{21         \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_transform_a74a5625690f2787c139281d826baefff}{SetParent}}(std::shared\_ptr<Transform> \_parent);}
+\DoxyCodeLine{23         vec3 \mbox{\hyperlink{struct_h_g_e_1_1_transform_a45524dbe46dca796f2e9d03f011d53df}{GetPosition}}();}
+\DoxyCodeLine{25         vec3 \mbox{\hyperlink{struct_h_g_e_1_1_transform_a079506c7db1f8343e7655f3a0ff26454}{GetRotation}}();}
+\DoxyCodeLine{27         vec3 \mbox{\hyperlink{struct_h_g_e_1_1_transform_ad75b9dcbc34951e74761049e38f90d5e}{GetScale}}();}
+\DoxyCodeLine{29         vec3 \mbox{\hyperlink{struct_h_g_e_1_1_transform_a16d2a2e27c72004d9156ccc980445749}{GetForward}}();}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{32         \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_transform_ad45c5fc1f37e21cb60f3b6281f5585a9}{SetPosition}}(\textcolor{keywordtype}{float} \_x, \textcolor{keywordtype}{float} \_y, \textcolor{keywordtype}{float} \_z);}
+\DoxyCodeLine{34         \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_transform_ad45c5fc1f37e21cb60f3b6281f5585a9}{SetPosition}}(vec3 \_pos);}
+\DoxyCodeLine{36         \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_transform_a3e65e8cae04ffe8623475fe67e466190}{SetRotation}}(\textcolor{keywordtype}{float} \_x, \textcolor{keywordtype}{float} \_y, \textcolor{keywordtype}{float} \_z);}
+\DoxyCodeLine{38         \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_transform_a3e65e8cae04ffe8623475fe67e466190}{SetRotation}}(vec3 \_rot);}
+\DoxyCodeLine{40         \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_transform_a13186c68c7809e20e9e1d92561ac8e08}{SetScale}}(\textcolor{keywordtype}{float} \_x, \textcolor{keywordtype}{float} \_y, \textcolor{keywordtype}{float} \_z);}
+\DoxyCodeLine{42         \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_transform_a13186c68c7809e20e9e1d92561ac8e08}{SetScale}}(vec3 \_scl);}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44     \textcolor{keyword}{private}:}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46         vec3 position;}
+\DoxyCodeLine{47         vec3 rotation;}
+\DoxyCodeLine{48         vec3 scale;}
+\DoxyCodeLine{49         vec3 forward;}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51         std::weak\_ptr<Transform> parent; }
+\DoxyCodeLine{52     \};}
+\DoxyCodeLine{53 \}}
+\DoxyCodeLine{54 }
+
+\end{DoxyCode}

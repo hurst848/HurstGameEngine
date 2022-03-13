@@ -1,0 +1,31 @@
+\hypertarget{_mesh_8h_source}{}\doxysection{Mesh.\+h}
+\label{_mesh_8h_source}\index{Mesh.h@{Mesh.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#include "{}Resource.h"{}}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}glew.h"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{namespace }HGE}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{14     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_mesh}{Mesh}} : \mbox{\hyperlink{struct_h_g_e_1_1_resource}{Resource}}}
+\DoxyCodeLine{15     \{}
+\DoxyCodeLine{16         \textcolor{keyword}{friend} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_mesh_builder}{MeshBuilder}};}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18     \textcolor{keyword}{public}:}
+\DoxyCodeLine{20         \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_mesh_abaca40646d345a041ea0419038dede42}{Load}}(\textcolor{keyword}{const} std::string\& \_path);}
+\DoxyCodeLine{22         GLuint \mbox{\hyperlink{struct_h_g_e_1_1_mesh_a11655a7ca544706fe730b75ab84ec4b7}{ID}};}
+\DoxyCodeLine{24         \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{struct_h_g_e_1_1_mesh_a599add23240ba9a401e2e859d8628512}{VertexCount}};}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     \textcolor{keyword}{private}:}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28         \textcolor{keywordtype}{void} createMeshFromMeshBuilder(std::string \_name, GLuint \_iD, \textcolor{keywordtype}{size\_t} \_vertexCount);}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30         \textcolor{keywordtype}{void} rename(std::string \_path);}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32     \};}
+\DoxyCodeLine{33 \}}
+
+\end{DoxyCode}

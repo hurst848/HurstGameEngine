@@ -1,0 +1,32 @@
+\hypertarget{_sound_8h_source}{}\doxysection{Sound.\+h}
+\label{_sound_8h_source}\index{Sound.h@{Sound.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#include "{}Resource.h"{}}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}al.h"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}alc.h"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{namespace }HGE}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{14     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_sound}{Sound}} : \mbox{\hyperlink{struct_h_g_e_1_1_resource}{Resource}}}
+\DoxyCodeLine{15     \{}
+\DoxyCodeLine{16         \textcolor{keyword}{friend} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_audio_player}{AudioPlayer}};}
+\DoxyCodeLine{17     \textcolor{keyword}{public}:}
+\DoxyCodeLine{19         \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_sound_ad5b8bdc528c56a124be4126077ea9712}{Load}}(\textcolor{keyword}{const} std::string\& \_path);}
+\DoxyCodeLine{21         ALuint \mbox{\hyperlink{struct_h_g_e_1_1_sound_a6c1673797b33b760dd66ab6e324384c6}{ID}};}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     \textcolor{keyword}{private}:}
+\DoxyCodeLine{24         }
+\DoxyCodeLine{25         std::vector<char> bufferData;}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27         ALenum format;}
+\DoxyCodeLine{28         ALsizei frequency;}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30         \textcolor{keywordtype}{void} rename(std::string \_path);}
+\DoxyCodeLine{31     \};}
+\DoxyCodeLine{32 \}}
+
+\end{DoxyCode}

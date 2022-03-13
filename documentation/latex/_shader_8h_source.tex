@@ -1,0 +1,71 @@
+\hypertarget{_shader_8h_source}{}\doxysection{Shader.\+h}
+\label{_shader_8h_source}\index{Shader.h@{Shader.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#include "{}Resource.h"{}}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}glew.h"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{namespace }HGE}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{31     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_shader}{Shader}} : \mbox{\hyperlink{struct_h_g_e_1_1_resource}{Resource}}}
+\DoxyCodeLine{32     \{}
+\DoxyCodeLine{33         \textcolor{keyword}{friend} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_shader_program}{ShaderProgram}};}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     \textcolor{keyword}{public}:}
+\DoxyCodeLine{37         \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_shader_a17971d1a5af7a1cec0bb832690c2d8bf}{Load}}(\textcolor{keyword}{const} std::string\& \_path);}
+\DoxyCodeLine{39         \mbox{\hyperlink{struct_h_g_e_1_1_shader_a7d8ec89ffefca7c4247146fd72264bd8}{\string~Shader}}();}
+\DoxyCodeLine{41         GLuint \mbox{\hyperlink{struct_h_g_e_1_1_shader_a8d827582d889fc327a75b65f585d3763}{ID}};}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43     \textcolor{keyword}{private}:}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45         \textcolor{keyword}{const} GLchar* code;}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47         std::vector<std::string> flags;}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49         \textcolor{keywordtype}{void} evaluateFlags(std::string \_line);}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51         \textcolor{comment}{/*}}
+\DoxyCodeLine{52 \textcolor{comment}{        * FLAGS:}}
+\DoxyCodeLine{53 \textcolor{comment}{        * }}
+\DoxyCodeLine{54 \textcolor{comment}{        *   fa-\/1 = attribute vec3 a\_Position}}
+\DoxyCodeLine{55 \textcolor{comment}{        *   fa-\/2 = attribute vec2 a\_TextureCoordinates}}
+\DoxyCodeLine{56 \textcolor{comment}{        *   fa-\/3 = attribute vec3 a\_Normal}}
+\DoxyCodeLine{57 \textcolor{comment}{        *   }}
+\DoxyCodeLine{58 \textcolor{comment}{        *   fu-\/1 = uniform mat4 u\_ModelMatrix}}
+\DoxyCodeLine{59 \textcolor{comment}{        *   fu-\/2 = uniform mat4 u\_ProjectionMatrix}}
+\DoxyCodeLine{60 \textcolor{comment}{        *   fu-\/3 = uniform mat4 u\_ViewMatrix}}
+\DoxyCodeLine{61 \textcolor{comment}{        *   fu-\/4 = uniform vec3 u\_LightColour}}
+\DoxyCodeLine{62 \textcolor{comment}{        *   fu-\/5 = uniform vec3 u\_LightPosition}}
+\DoxyCodeLine{63 \textcolor{comment}{        *   fu-\/6 = uniform float u\_LightAmbientStrength}}
+\DoxyCodeLine{64 \textcolor{comment}{        *   fu-\/7 = unifrom sampler2D u\_Texture}}
+\DoxyCodeLine{65 \textcolor{comment}{        */}}
+\DoxyCodeLine{66     \};}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{73     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_shader_program}{ShaderProgram}}}
+\DoxyCodeLine{74     \{}
+\DoxyCodeLine{75         \textcolor{keyword}{friend} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_mesh_renderer}{MeshRenderer}};}
+\DoxyCodeLine{76     \textcolor{keyword}{public}:}
+\DoxyCodeLine{78         GLuint \mbox{\hyperlink{struct_h_g_e_1_1_shader_program_a4eed8bd0148a1cd0070b2898904af725}{ID}};}
+\DoxyCodeLine{80         \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_shader_program_a2e47dca44fca62f8599680dd32a5b1ac}{AddShader}}(std::shared\_ptr<Shader> \_shader);}
+\DoxyCodeLine{82         \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_h_g_e_1_1_shader_program_a2e465d8a6b937a77e79680c074403c49}{Compile}}();}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84     \textcolor{keyword}{private}:}
+\DoxyCodeLine{85         std::vector<std::shared\_ptr<Shader>> shaders;}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87         \textcolor{keyword}{struct }ShaderUniform}
+\DoxyCodeLine{88         \{}
+\DoxyCodeLine{89             std::string name;}
+\DoxyCodeLine{90             GLuint \mbox{\hyperlink{struct_h_g_e_1_1_shader_program_a4eed8bd0148a1cd0070b2898904af725}{ID}};}
+\DoxyCodeLine{91         \};}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93         std::vector<ShaderUniform> uniforms;}
+\DoxyCodeLine{94     \};}
+\DoxyCodeLine{95     }
+\DoxyCodeLine{96 \}}
+
+\end{DoxyCode}

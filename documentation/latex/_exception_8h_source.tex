@@ -1,0 +1,30 @@
+\hypertarget{_exception_8h_source}{}\doxysection{Exception.\+h}
+\label{_exception_8h_source}\index{src/Engine/Exception.h@{src/Engine/Exception.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_HGE\_EXCEPTION\_H\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_HGE\_EXCEPTION\_H\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <exception>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{namespace }HGE}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_h_g_e_1_1_exception}{Exception}} : \textcolor{keyword}{public} std::exception}
+\DoxyCodeLine{10     \{}
+\DoxyCodeLine{11     \textcolor{keyword}{public}:}
+\DoxyCodeLine{12         \mbox{\hyperlink{struct_h_g_e_1_1_exception}{Exception}}(std::string \_message);}
+\DoxyCodeLine{13         \mbox{\hyperlink{struct_h_g_e_1_1_exception}{\string~Exception}}() \textcolor{keywordflow}{throw}();}
+\DoxyCodeLine{14         \textcolor{keyword}{const} \textcolor{keywordtype}{char}* what();}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16     \textcolor{keyword}{private}:}
+\DoxyCodeLine{17         std::string message;}
+\DoxyCodeLine{18     \};}
+\DoxyCodeLine{19 \}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// !\_HGE\_EXCEPTION\_H\_}}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 }
+
+\end{DoxyCode}
